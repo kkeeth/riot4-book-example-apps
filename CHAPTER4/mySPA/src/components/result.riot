@@ -3,7 +3,7 @@
   <Spinner if={ isLoading } />
   <ul>
     <li each={ gif in gifsJson } key={ gif.id }>
-      <img src={ gif.images.downsized.url } alt={ gif.title } />
+      <img src={ gif.images.fixed_height.url } alt={ gif.title } />
     </li>
   </ul>
 
@@ -29,4 +29,25 @@
       }
     }
   </script>
+  <style>
+    ul {
+      padding: 0;
+    }
+    li {
+      display: inline;
+      list-style: none;
+      line-height: 0;
+    }
+    img {
+      margin: 5px;
+    }
+    @media (max-width: 375px) {
+      ul {
+        text-align: center;
+      }
+      img {
+        width: 285px;
+      }
+    }
+  </style>
 </result>
