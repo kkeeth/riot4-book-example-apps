@@ -1,0 +1,55 @@
+<app>
+  <div class="app-header">
+    <img src="https://riot.js.org/img/logo/riot-logo.svg" alt="Riot.js logo" class="logo">
+  </div>
+  <h1>{ props.title }</h1>
+  <su-checkbox-group
+    name="checkbox-group"
+    value={ checkboxGroupValue }
+    onchange={ handleChange }
+  >
+    <su-checkbox value="1">Checkbox 1</su-checkbox>
+    <su-checkbox value="2">Checkbox 2</su-checkbox>
+    <su-checkbox value="3">Checkbox 3</su-checkbox>
+  </su-checkbox-group>
+  <div>
+    <button
+      type="button"
+      class="ui button"
+      onclick={ () => checkSelectCheckbox([1,2]) }
+    >Check 1,2</button>
+    <button
+      type="button"
+      class="ui button"
+      onclick={ () => checkSelectCheckbox([1,2,3]) }
+    >Check all</button>
+    <button
+      type="button"
+      class="ui button"
+      onclick={ () => checkSelectCheckbox([]) }
+    >Clear all</button>
+  </div>
+
+  <script>
+    export default {
+      checkboxGroupValue: [],
+      onBeforeMount(props, state) {
+      },
+      checkSelectCheckbox(value) {
+        if (value.length === 0) {
+          this.$$('input[type="checkbox"]').forEach(item => {
+            item.checked = false
+          })
+        }
+        this.checkboxGroupValue = value
+        this.update()
+      }
+    }
+  </script>
+
+  <style>
+    :host {
+      padding: 2rem;
+    }
+  </style>
+</app>

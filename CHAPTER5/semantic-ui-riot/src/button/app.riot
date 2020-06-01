@@ -1,0 +1,121 @@
+<app>
+  <div class="app-header">
+    <img src="https://riot.js.org/img/logo/riot-logo.svg" alt="Riot.js logo" class="logo">
+  </div>
+  <h1>{ props.title }</h1>
+  <p>basic</p>
+  <button class="ui basic button">Default</button>
+  <button class="ui basic button primary">Primary</button>
+  <button class="ui basic button secondary">Secondary</button>
+  <button class="ui basic button positive">Positive</button>
+  <button class="ui basic button negative">Negative</button>
+ 
+  <hr />
+ 
+  <p>fill</p>
+  <button class="ui button">default</button>
+  <button class="ui button primary">primary</button>
+  <button class="ui button secondary">Secondary</button>
+  <button class="ui button positive">Positive</button>
+  <button class="ui button negative">Negative</button>
+ 
+  <hr />
+ 
+  <p>Colors</p>
+  <button class="ui red button">Red</button>
+  <button class="ui orange button">Orange</button>
+  <button class="ui yellow button">Yellow</button>
+  <button class="ui olive button">Olive</button>
+  <button class="ui green button">Green</button>
+  <button class="ui teal button">Teal</button>
+  <button class="ui blue button">Blue</button>
+  <button class="ui violet button">Violet</button>
+  <button class="ui purple button">Purple</button>
+  <button class="ui pink button">Pink</button>
+  <button class="ui brown button">Brown</button>
+  <button class="ui grey button">Grey</button>
+  <button class="ui black button">Black</button>
+
+  <hr />
+ 
+  <p>Animated</p>
+  <button class="ui animated button basic violet">
+    <div class="visible content">Next</div>
+    <div class="hidden content">
+      <i class="right arrow icon" />
+    </div>
+  </button>
+  <button class="ui vertical animated button teal">
+    <div class="hidden content">Shop</div>
+    <div class="visible content">
+      <i class="shop icon" />
+    </div>
+  </button>
+  <button class="ui animated fade button secondary">
+    <div class="visible content">Sign-up for a Pro account</div>
+    <div class="hidden content">
+      $12.99 a month
+    </div>
+  </button>
+ 
+  <hr />
+  <p>Labeled</p>
+  <div class="ui labeled button">
+    <button class="ui red button">
+      <i class="heart icon"></i> Like
+    </button>
+    <a class="ui basic red left pointing label">
+      2,048
+    </a>
+  </div>
+  <div class="ui left labeled button">
+    <a class="ui basic label">
+      2,048
+    </a>
+    <button class="ui icon button blue">
+      <i class="fork icon"></i>
+    </button>
+  </div>
+  <button class="ui labeled icon button">
+    <i class="pause icon"></i>
+    Pause
+  </button>
+  <hr />
+  <p>Group</p>
+  <div class="ui icon buttons">
+    <button class="ui button"><i class="align left icon"></i></button>
+    <button class="ui button"><i class="align center icon"></i></button>
+    <button class="ui button"><i class="align right icon"></i></button>
+    <button class="ui button"><i class="align justify icon"></i></button>
+  </div>
+  <hr />
+  <p>Status</p>
+  <button class="ui active button">
+    <i class="user icon"></i>
+    Follow
+  </button>
+  <button class="ui disabled button">
+    <i class="user icon"></i>
+    Followed
+  </button>
+  <button class="ui primary loading button">Loading</button>
+  <button class="ui secondary loading basic button">Loading</button>
+  <button
+    class="ui toggle button { isActive && 'active' }"
+    onclick={ handleToggle }
+  >Vote</button>
+  <button class="fluid ui button" style="margin-top: 10px;">Fits container</button>
+
+  <script>
+    export default {
+      onBeforeMount(props, state) {
+      }
+    }
+  </script>
+
+  <style>
+    :host {
+      padding: 2rem;
+    }
+  </style>
+</app>

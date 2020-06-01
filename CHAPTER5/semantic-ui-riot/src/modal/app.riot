@@ -1,0 +1,55 @@
+<app>
+  <div class="app-header">
+    <img src="https://riot.js.org/img/logo/riot-logo.svg" alt="Riot.js logo" class="logo">
+  </div>
+  <h1>{ props.title }</h1>
+  <su-modal modal={ modal } class="large" show={ state.show } onhide={ closeModal }>
+    <div class="ui medium image">
+      <img src="/assets/img/rachel.png" />
+    </div>
+    <div class="description">
+      <div class="ui header">Default Profile Image</div>
+      <p>We've found the following
+         <a href="https://www.gravatar.com" target="_blank">gravatar</a>
+         image ssociated with your e-mail address.</p>
+      <p>Is it okay to use this photo?</p>
+    </div>
+  </su-modal>
+  <button class="ui button teal" onclick={ showModal }>Show modal</button>
+
+  <script>
+    export default {
+      modal: {
+        header: 'Select a Photo',
+        buttons: [
+          {
+            text: 'Nope',
+            type: 'secondary'
+          },
+          {
+            text: 'OK',
+            type: 'primary',
+            icon: 'checkmark'
+          }
+        ]
+      },
+      state:{
+        show: false
+      },
+      onBeforeMount(props, state) {
+      },
+      showModal() {
+        this.update({ show: true })
+      },
+      closeModal() {
+        this.update({ show: false })
+      }
+    }
+  </script>
+
+  <style>
+    :host {
+      padding: 2rem;
+    }
+  </style>
+</app>
