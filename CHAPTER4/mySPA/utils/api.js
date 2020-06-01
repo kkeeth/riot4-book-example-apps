@@ -1,8 +1,10 @@
 import axios from 'axios'
+import dotenv from 'dotenv'
+dotenv.config()
 
 const searchGifs = (query) => {
   // API key
-  const key = "ここに Giphy API のキーを設定"
+  const key = process.env.API_KEY
   // base URL
   const baseUrl = "https://api.giphy.com/v1/gifs/search"
   // limit
