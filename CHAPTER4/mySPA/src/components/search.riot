@@ -4,12 +4,15 @@
   </form>
 
   <script>
+    import searchGifs from '../../utils/api'
+
     export default {
       onMounted() {
         this.$('input').focus()
       },
       search(e) {
         e.preventDefault()
+        searchGifs(e.target.search.value)
       }
     }
   </script>
