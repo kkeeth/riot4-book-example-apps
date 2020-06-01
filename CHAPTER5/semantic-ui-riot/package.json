@@ -1,0 +1,19 @@
+{
+  "name": "riot-style-base",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html --open"
+  },
+  "devDependencies": {
+    "@riotjs/hot-reload": "^4.0.1",
+    "@riotjs/parcel-plugin-riot": "^4.0.1",
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "ress": "^2.0.4",
+    "riot": "^4.12.4",
+    "semantic-ui-riot": "^2.2.2"
+  }
+}
