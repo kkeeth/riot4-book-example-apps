@@ -1,0 +1,34 @@
+<search>
+  <form onsubmit={ search }>
+    <input placeholder="Search Giphys" name="search">
+  </form>
+
+  <script>
+    export default {
+      onMounted() {
+        this.$('input').focus()
+      },
+      search(e) {
+        e.preventDefault()
+      }
+    }
+  </script>
+
+  <style>
+    input {
+      line-height: 1.5rem;
+      width: 100%;
+      padding: 5px;
+    }
+
+    input:focus {
+      border-color: #008080;
+      outline: none;
+    }
+
+    input::placeholder {
+      font-weight: 100;
+      font-style: italic;
+    }
+  </style>
+</search>
