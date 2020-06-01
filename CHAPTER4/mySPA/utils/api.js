@@ -12,10 +12,10 @@ const searchGifs = (query) => {
   // API request URL
   const reqUrl = `${baseUrl}?api_key=${key}&q=${query}&limit=${limit}rating=G`
 
-  axios
+  return axios
     .get(reqUrl)
     .then(({ data: res }) => {
-      console.log(res)
+      return res.data
     })
 }
 

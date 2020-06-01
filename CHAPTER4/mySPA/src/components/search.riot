@@ -12,7 +12,12 @@
       },
       search(e) {
         e.preventDefault()
+
         searchGifs(e.target.search.value)
+          .then(data => {
+            e.target.search.value = ''
+            this.props.observable.trigger('show gifs', data)
+          })
       }
     }
   </script>
