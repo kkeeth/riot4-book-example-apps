@@ -9,28 +9,35 @@
     </nav>
 
     <route path="/:page">
-      <h2>{getPageById(route).title}</h2>
-      <p>{getPageById(route).body}</p>
-      {JSON.stringify(route.params)}
+      <Food
+        title={ getPageById(route).title }
+        body={ getPageById(route).body }
+        color='#ffcc99'
+      />
     </route>
     <route path="/:page/:detail">
-      <h2>{getPageById(route).title}</h2>
-      <p>{getPageById(route).body}</p>
-      {JSON.stringify(route.params)}
+      <Food
+        title={ getPageById(route).title }
+        body={ getPageById(route).body }
+        color='#ccffff'
+      />
     </route>
     <route path="">
-      <h2>{ pages[0].title }</h2>
-      <p>{ pages[0].body }</p>
+      <Home title={ pages[0].title } body={ pages[0].body } />
     </route>
   </router>
 
   <script>
     import { Router, Route } from '@riotjs/route'
+    import Home from './components/app-home.riot'
+    import Food from './components/app-food.riot'
 
     export default {
       components: {
         Router,
-        Route
+        Route,
+        Home,
+        Food
       },
       onBeforeMount(props, state) {
         // any processing
