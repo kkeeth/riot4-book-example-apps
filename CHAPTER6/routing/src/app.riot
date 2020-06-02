@@ -1,0 +1,20 @@
+<app>
+  <div class="app-header">
+    <img src="https://riot.js.org/img/logo/riot-logo.svg" alt="Riot.js logo" class="logo">
+  </div>
+  <h1>{ props.title }</h1>
+
+  <script>
+    import { Router, Route } from '@riotjs/route'
+
+    export default {
+      components: {
+        Router,
+        Route
+      },
+      onBeforeMount(props, state) {
+        // any processing
+      }
+    }
+  </script>
+</app>
