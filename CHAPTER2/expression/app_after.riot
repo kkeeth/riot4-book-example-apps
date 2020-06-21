@@ -1,0 +1,21 @@
+<app>
+  <div class="app-header">
+    <img src="https://riot.js.org/img/logo/riot-logo.svg" alt="Riot.js logo" class="logo">
+  </div>
+  <ul>
+    <li>ランダム関数:{ Math.random() }</li>
+    <li>未定義チェック:{ value || 'Undefined' }</li>
+    <li>関数の実行:(コンソールを開いて確認してください)</li>
+    <li>三項演算子{ title }</li>
+  </ul>
+  <script>
+    export default {
+      onBeforeMount(props) {
+        (() => console.log('Hello Riot.js!'))()
+        this.title = props.title.length > 140
+                      ? 'Message is too long!'
+                      : 'GooD👍'
+      }
+    }
+  </script>
+</app>
