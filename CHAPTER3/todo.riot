@@ -1,0 +1,84 @@
+<todo>
+  <div class="app-header">
+    <img src="https://riot.js.org/img/logo/riot-logo.svg" alt="riot logo" class="logo">
+  </div>
+  <div id="container">
+    <h1>{ props.title }</h1>
+
+    <todo-form
+      hasDoneTodo={ state.hasDoneTodo }
+      observable={ obs }
+      nextId={　state.nextId　}
+    />
+
+    <todo-list
+      todoList={ state.todoList }
+      observable={ obs }
+    />
+  </div>
+
+  <script>
+    export default {
+      state: {
+        todoList: [],
+        nextId: 0,
+        hasDoneTodo: true
+      },
+      onBeforeMount(props, state) {
+        const beforeTodoState = JSON.parse(localStorage.getItem('todo state'))
+        if (beforeTodoState !== null) {
+          state.todoList = beforeTodoState.todoList
+          state.nextId = beforeTodoState.nextId
+          state.hasDoneTodo = beforeTodoState.hasDoneTodo
+        } else {
+          state.todoList = props.todoList
+          state.nextId = props.nextId
+          state.hasDoneTodo = this.checkDoneTodo()
+        }
+        this.obs = observable(this)
+      },
+      onMounted() {
+        this.on('add todo', (newTask) => {
+          const updatedTodoList = [
+            ...this.state.todoList,
+            {
+              id: this.state.nextId + 1,
+              ...newTask
+            }
+          ]
+          this.update({
+            todoList: updatedTodoList,
+            nextId: this.state.nextId + 1,
+            hasDoneTodo: this.checkDoneTodo(updatedTodoList)
+          })
+        })
+        this.on('delete done todos', () => {
+          this.update({
+            hasDoneTodo: false,
+            todoList: this.state.todoList.filter(item => item.done !== true)
+          })
+        })
+        this.on('delete todo', (filteredTodoList) => {
+          this.update({
+            hasDoneTodo: this.checkDoneTodo(filteredTodoList),
+            todoList: filteredTodoList
+          })
+        })
+        this.on('toggle todo', (updatedList) => {
+          this.update({
+            hasDoneTodo: this.checkDoneTodo(updatedList),
+            todoList: updatedList
+          })
+        })
+      },
+      onUpdated(props, state) {
+        localStorage.setItem('todo state', JSON.stringify(state))
+        console.log(JSON.parse(localStorage['todo state']))
+      },
+      checkDoneTodo(updatedTodoList) {
+        const todoList = updatedTodoList || this.state.todoList
+        return todoList.some(item => item.done === true)
+      }
+    }
+  </script>
+</todo>

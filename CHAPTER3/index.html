@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/style.css">
+    <script type="text/javascript" src="https://unpkg.com/riot/riot+compiler.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@riotjs/observable@4.0.4/dist/observable.js"></script>
+    <script src="lib/script.js"></script>
+  </head>
+
+  <body>
+    <todo></todo>
+
+    <script type="riot" src="./todo.riot"></script>
+    <script type="riot" src="./components/todo-form.riot"></script>
+    <script type="riot" src="components/todo-list.riot"></script>
+    <script>
+      riot.compile().then(() => {
+        riot.mount('todo', {
+          title: 'TODO App',
+          todoList: [
+            { id: 1, title: 'task1', done: false },
+            { id: 2, title: 'task2', done: true },
+            { id: 3, title: 'task3', done: false },
+          ],
+          nextId: 4
+        })
+      })
+    </script>
+  </body>
+</html>
