@@ -8,14 +8,23 @@
     <li>関数の実行:(コンソールを開いて確認してください)</li>
     <li>三項演算子{ title }</li>
   </ul>
+  <hr>
+  <button onclick={ toggle }>click</button>
+  <p if={ login }>Logged In</p>
+  <p if={ !login }>Logged Out</p>
 
   <script>
     export default {
+      login: false,
       onBeforeMount(props) {
         (() => console.log('Hello Riot.js!'))()
         this.title = props.title.length > 140
                       ? 'Message is too long!'
                       : 'GooD👍'
+      },
+      toggle() {
+        this.login = !this.login
+        this.update()
       }
     }
   </script>

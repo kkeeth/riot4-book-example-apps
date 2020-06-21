@@ -1,0 +1,15 @@
+<app>
+  <div class="app-header">
+    <img src="https://riot.js.org/img/logo/riot-logo.svg" alt="Riot.js logo" class="logo">
+  </div>
+  <template if={ isReady }>
+    <h1>{ props.title }</h1>
+  </template>
+  <p if={!isReady}>loading...</p>
+
+  <script>
+    export default {
+      isReady: true
+    }
+  </script>
+</app>
