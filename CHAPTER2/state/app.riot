@@ -1,0 +1,18 @@
+<app>
+  <div class="app-header">
+    <img src="https://riot.js.org/img/logo/riot-logo.svg" alt="Riot.js logo" class="logo">
+  </div>
+  <h2>{ props.title }</h2>
+  <h2>{ state.title }</h2>
+  <script>
+    export default {
+      onBeforeMount(props, state) {
+        state.title = props.title
+        console.log(state.title)
+
+        state.title = 'Updated!!'
+        console.log(state.title)
+      }
+    }
+  </script>
+</app>
