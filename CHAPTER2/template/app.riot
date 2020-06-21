@@ -1,19 +1,13 @@
 <app>
   <div class="app-header">
-    <img src="https://riot.js.org/img/logo/riot-logo.svg" alt="Riot.js logo" class="logo">
+    <img src="https://riot.js.org/img/logo/riot-logo.svg" alt="riot logo" class="logo">
   </div>
   <h1>{ props.title }</h1>
-  <h2>{ props.title }</h2>
-  <h2>{ state.title }</h2>
 
   <script>
     export default {
       onBeforeMount(props, state) {
-        state.title = 'Updated!!'
-      },
-      onMounted() {
-        console.log(this.$('h1'))
-        console.log(this.$$('h2'))
+        // any processing
       }
     }
   </script>
