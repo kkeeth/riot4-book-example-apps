@@ -7,16 +7,14 @@
   </head>
 
   <body>
-    <div is="app"></div>
+    <app title="Hello Riot.js!"></app>
 
     <script type="riot" src="./app.riot"></script>
     <script>
       riot
         .compile()
         .then(() => {
-          riot.mount('[is="app"]', {
-            title: 'Hello Riot.js!'
-          })
+          riot.mount('app')
         })
     </script>
   </body>
