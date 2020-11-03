@@ -3,10 +3,8 @@ todo #container {
   max-width: 480px;
   margin: 5% auto;
   padding: 20px;
-  box-shadow:
-    0 2px 2px 0 rgba(0,0,0,.14),
-    0 3px 1px -2px rgba(0,0,0,.2),
-    0 1px 5px 0 rgba(0,0,0,.12);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
 todo .app-header {
@@ -21,21 +19,27 @@ todo .logo {
 
 todo form input {
   font-size: 85%;
-  padding: .4em;
+  padding: 0.4em;
   border: 1px solid #ccc;
   border-radius: 2px;
 }
 
 todo button {
-  background-color: #1FADC5;
+  background-color: #1fadc5;
   border: 1px solid #eee;
   font-size: 75%;
   color: #fff;
-  padding: .4em 1.2em;
+  padding: 0.4em 1.2em;
   border-radius: 2em;
   cursor: pointer;
-  margin: 0 .5rem;
+  margin: 0 0.5rem;
   outline: none;
+}
+
+todo button:disabled {
+  background-color: #ddd;
+  color: #aaa;
+  cursor: default;
 }
 
 todo h4 {
@@ -49,8 +53,7 @@ todo ul {
 
 todo li {
   list-style-type: none;
-  padding: .2em 0;
-
+  padding: 0.2em 0;
 }
 
 todo li:hover {

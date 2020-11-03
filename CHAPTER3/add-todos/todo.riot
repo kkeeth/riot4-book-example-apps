@@ -21,6 +21,11 @@
     <ul>
       <li each={ todo in state.todoList } key={ todo.id }>
         <label class={ todo.done ? 'completed' : null }>
+          <input
+            type="checkbox"
+            checked={ todo.done }
+            onclick={ () => toggle(todo) }
+          >
           { todo.title }
         </label>
       </li>
@@ -29,6 +34,11 @@
 
   <script>
     export default {
+      state: {
+        todoList: [],
+        nextId: 0,
+        isInput: false
+      },
       onBeforeMount(props, state) {
         state.nextId = props.nextId
         state.todoList = props.todoList
@@ -45,9 +55,20 @@
                 done: false
               }
             ],
-            nextId: this.state.nextId + 1
+            nextId: this.state.nextId + 1,
+            isInput: false
           })
+          e.target.todo.value = ""
         }
+      },
+      input(e) {
+        this.update({
+          isInput: e.target.value
+        })
+      },
+      toggle(todo) {
+        todo.done = !todo.done
+        this.update()
       }
     }
   </script>
