@@ -17,13 +17,6 @@ todo .logo {
   margin-bottom: 5px;
 }
 
-todo form input {
-  font-size: 85%;
-  padding: 0.4em;
-  border: 1px solid #ccc;
-  border-radius: 2px;
-}
-
 todo button {
   background-color: #1fadc5;
   border: 1px solid #eee;
