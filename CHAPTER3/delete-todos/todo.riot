@@ -15,6 +15,13 @@
       <button disabled={ !state.isInput }>
         Add #{ state.todoList.length + 1 }
       </button>
+        <button
+          class="danger"
+          disabled={ !state.hasDoneTodo }
+          onclick={ deleteDoneTodos }
+        >
+          delete done
+        </button>
     </form>
 
     <h4>todo list</h4>
@@ -41,24 +48,28 @@
       state: {
         todoList: [],
         nextId: 0,
-        isInput: false
+        isInput: false,
+        hasDoneTodo: true
       },
       onBeforeMount(props, state) {
         state.nextId = props.nextId
         state.todoList = props.todoList
+        state.hasDoneTodo = this.checkDoneTodo()
       },
       addTodo(e) {
         e.preventDefault()
         if (e.target.todo.value) {
+          const updatedTodoList = [
+            ...this.state.todoList,
+            {
+              id: this.state.nextId + 1,
+              title: e.target.todo.value,
+              done: false
+            }
+          ]
           this.update({
-            todoList: [
-              ...this.state.todoList,
-              {
-                id: this.state.nextId + 1,
-                title: e.target.todo.value,
-                done: false
-              }
-            ],
+            hasDoneTodo: this.checkDoneTodo(updatedTodoList),
+            todoList: updatedTodoList,
             nextId: this.state.nextId + 1,
             isInput: false
           })
@@ -72,13 +83,29 @@
       },
       toggle(todo) {
         todo.done = !todo.done
-        this.update()
+        this.update({
+          hasDoneTodo: this.checkDoneTodo()
+        })
+      },
+      checkDoneTodo(updatedTodoList) {
+        const todoList = updatedTodoList || this.state.todoList
+        return todoList.some(item => item.done === true)
       },
       deleteTodo(todo) {
-        console.log(todo)
         if (window.confirm('本当に削除してもよろしいですか? ')) {
+          const updatedTodoList
+            = this.state.todoList.filter(item => item.id !== todo.id)
           this.update({
-            todoList: this.state.todoList.filter(item => item.id !== todo.id)
+            hasDoneTodo: this.checkDoneTodo(updatedTodoList),
+            todoList: updatedTodoList
+          })
+        }
+      },
+      deleteDoneTodos() {
+        if (window.confirm('本当に全てのtodoを削除してもよろしいですか? ')) {
+          this.update({
+            hasDoneTodo: false,
+            todoList: this.state.todoList.filter(item => item.done !== true)
           })
         }
       }

@@ -53,6 +53,12 @@ todo button.danger:hover {
   color: #fff;
 }
 
+todo button.danger:disabled {
+  background-color: #ddd;
+  color: #aaa;
+  cursor: default;
+}
+
 todo h4 {
   border-top: 1px solid #aaa;
   padding-top: 1rem;
