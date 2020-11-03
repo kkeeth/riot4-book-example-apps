@@ -1,0 +1,54 @@
+<todo>
+  <div class="app-header">
+    <img src="https://riot.js.org/img/logo/riot-logo.svg" alt="riot logo" class="logo">
+  </div>
+  <div id="container">
+    <h1>{ props.title }</h1>
+
+    <form onsubmit={ addTodo }>
+      <input
+        name="todo"
+        value=""
+        oninput={ input }
+        placeholder="please input task"
+      />
+      <button disabled={ !state.isInput }>
+        Add #{ state.todoList.length + 1 }
+      </button>
+    </form>
+
+    <h4>todo list</h4>
+    <ul>
+      <li each={ todo in state.todoList } key={ todo.id }>
+        <label class={ todo.done ? 'completed' : null }>
+          { todo.title }
+        </label>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    export default {
+      onBeforeMount(props, state) {
+        state.nextId = props.nextId
+        state.todoList = props.todoList
+      },
+      addTodo(e) {
+        e.preventDefault()
+        if (e.target.todo.value) {
+          this.update({
+            todoList: [
+              ...this.state.todoList,
+              {
+                id: this.state.nextId + 1,
+                title: e.target.todo.value,
+                done: false
+              }
+            ],
+            nextId: this.state.nextId + 1
+          })
+        }
+      }
+    }
+  </script>
+</todo>
