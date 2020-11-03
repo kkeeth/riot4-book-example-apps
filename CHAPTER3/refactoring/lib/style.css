@@ -51,26 +51,3 @@ todo button.danger:disabled {
   color: #aaa;
   cursor: default;
 }
-
-todo h4 {
-  border-top: 1px solid #aaa;
-  padding-top: 1rem;
-}
-
-todo ul {
-  padding: 0;
-}
-
-todo li {
-  list-style-type: none;
-  padding: 0.2em 0;
-}
-
-todo li:hover {
-  background-color: #eee;
-}
-
-todo li .completed {
-  text-decoration: line-through;
-  color: #ccc;
-}
