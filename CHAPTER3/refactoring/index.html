@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/style.css">
+    <script type="text/javascript" src="riot+compiler.min.js"></script>
+    <script src="lib/script.js"></script>
+  </head>
+
+  <body>
+    <todo></todo>
+
+    <script type="riot" src="./todo.riot"></script>
+    <script>
+      riot
+        .compile()
+        .then(() => {
+          riot.mount('todo', {
+            title: 'ToDo App',
+            todoList: [
+              { id: 1, title: 'task1', done: false },
+              { id: 2, title: 'task2', done: true },
+              { id: 3, title: 'task3', done: false },
+            ],
+            nextId: 4
+          })
+        })
+    </script>
+  </body>
+</html>
+

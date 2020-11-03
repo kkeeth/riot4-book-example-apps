@@ -1,0 +1,114 @@
+<todo>
+  <div class="app-header">
+    <img src="https://riot.js.org/img/logo/riot-logo.svg" alt="riot logo" class="logo">
+  </div>
+  <div id="container">
+    <h1>{ props.title }</h1>
+
+    <form onsubmit={ addTodo }>
+      <input
+        name="todo"
+        value=""
+        oninput={ input }
+        placeholder="please input task"
+      />
+      <button disabled={ !state.isInput }>
+        Add #{ state.todoList.length + 1 }
+      </button>
+        <button
+          class="danger"
+          disabled={ !state.hasDoneTodo }
+          onclick={ deleteDoneTodos }
+        >
+          delete done
+        </button>
+    </form>
+
+    <h4>todo list</h4>
+    <ul>
+      <li each={ todo in state.todoList } key={ todo.id }>
+        <label class={ todo.done ? 'completed' : null }>
+          <input
+            type="checkbox"
+            checked={ todo.done }
+            onclick={ () => toggle(todo) }
+          >
+          { todo.title }
+        </label>
+        <button class="danger" onclick={ () => deleteTodo(todo) }>
+          delete
+        </button>
+      </li>
+    </ul>
+    <p if={ state.todoList.length === 0 }>No Todos</p>
+  </div>
+
+  <script>
+    export default {
+      state: {
+        todoList: [],
+        nextId: 0,
+        isInput: false,
+        hasDoneTodo: true
+      },
+      onBeforeMount(props, state) {
+        state.nextId = props.nextId
+        state.todoList = props.todoList
+        state.hasDoneTodo = this.checkDoneTodo()
+      },
+      addTodo(e) {
+        e.preventDefault()
+        if (e.target.todo.value) {
+          const updatedTodoList = [
+            ...this.state.todoList,
+            {
+              id: this.state.nextId + 1,
+              title: e.target.todo.value,
+              done: false
+            }
+          ]
+          this.update({
+            hasDoneTodo: this.checkDoneTodo(updatedTodoList),
+            todoList: updatedTodoList,
+            nextId: this.state.nextId + 1,
+            isInput: false
+          })
+          e.target.todo.value = ""
+        }
+      },
+      input(e) {
+        this.update({
+          isInput: e.target.value
+        })
+      },
+      toggle(todo) {
+        todo.done = !todo.done
+        this.update({
+          hasDoneTodo: this.checkDoneTodo()
+        })
+      },
+      checkDoneTodo(updatedTodoList) {
+        const todoList = updatedTodoList || this.state.todoList
+        return todoList.some(item => item.done === true)
+      },
+      deleteTodo(todo) {
+        if (window.confirm('本当に削除してもよろしいですか? ')) {
+          const updatedTodoList
+            = this.state.todoList.filter(item => item.id !== todo.id)
+          this.update({
+            hasDoneTodo: this.checkDoneTodo(updatedTodoList),
+            todoList: updatedTodoList
+          })
+        }
+      },
+      deleteDoneTodos() {
+        if (window.confirm('本当に全てのtodoを削除してもよろしいですか? ')) {
+          this.update({
+            hasDoneTodo: false,
+            todoList: this.state.todoList.filter(item => item.done !== true)
+          })
+        }
+      }
+    }
+  </script>
+</todo>
