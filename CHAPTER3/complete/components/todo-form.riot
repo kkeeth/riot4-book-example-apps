@@ -3,8 +3,8 @@
     <input
       name="todo"
       value=""
-      oninput={ input }
       placeholder="please input task"
+      onkeyup={ input }
     />
     <button disabled={ !isInput }>
       Add #{ props.nextId }
@@ -22,7 +22,6 @@
     export default {
       addTodo(e) {
         e.preventDefault()
-
         if (e.target.todo.value) {
           this.isInput = false
           this.props.observable.trigger('add todo', {

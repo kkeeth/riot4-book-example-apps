@@ -7,7 +7,7 @@
           type="checkbox"
           checked={ todo.done }
           onclick={ () => toggle(todo) }
-        >
+        />
         { todo.title }
       </label>
       <button class="danger" onclick={ () => deleteTodo(todo) }>
@@ -24,7 +24,7 @@
         this.props.observable.trigger('toggle todo', this.props.todoList)
       },
       deleteTodo(todo) {
-        if (window.confirm('本当に削除してもよろしいですか? ')) {
+        if (window.confirm('本当に削除してもよろしいですか？')) {
           const updatedTodoList
             = this.props.todoList.filter(item => item.id !== todo.id)
           this.props.observable.trigger('delete todo', updatedTodoList)

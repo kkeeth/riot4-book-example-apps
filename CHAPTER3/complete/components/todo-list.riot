@@ -1,5 +1,5 @@
 <todo-list>
-  <h4>todo list</ht>
+  <h4>todo list</h4>
   <ul>
     <li each={ todo in props.todoList } key={ todo.id }>
       <label class={ todo.done ? 'completed' : null }>
@@ -25,9 +25,9 @@
       },
       deleteTodo(todo) {
         if (window.confirm('本当に削除してもよろしいですか？')) {
-          const filteredTodoList
+          const updatedTodoList
             = this.props.todoList.filter(item => item.id !== todo.id)
-          this.props.observable.trigger('delete todo', filteredTodoList)
+          this.props.observable.trigger('delete todo', updatedTodoList)
         }
       }
     }

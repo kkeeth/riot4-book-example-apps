@@ -36,7 +36,7 @@
         this.update()
       },
       deleteDoneTodos() {
-        if (window.confirm('本当に全てのtodoを削除してもよろしいですか? ')) {
+        if (window.confirm('本当に全ての todo を削除してもよろしいですか？')) {
           this.props.observable.trigger('delete done todos')
         }
       }
@@ -46,7 +46,7 @@
   <style>
     form input {
       font-size: 85%;
-      padding: 0.4em;
+      padding: .4em;
       border: 1px solid #ccc;
       border-radius: 2px;
     }

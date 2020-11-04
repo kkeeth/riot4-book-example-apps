@@ -29,7 +29,7 @@
         state.hasDoneTodo = this.checkDoneTodo()
         this.obs = observable(this)
       },
-      onMounted(){
+      onMounted() {
         this.on('add todo', (newTask) => {
           const updatedTodoList = [
             ...this.state.todoList,
@@ -47,7 +47,7 @@
         this.on('delete done todos', () => {
           this.update({
             hasDoneTodo: false,
-            todoList:  this.state.todoList.filter(item => item.done !== true)
+            todoList: this.state.todoList.filter(item => item.done !== true)
           })
         })
         this.on('delete todo', (filteredTodoList) => {
