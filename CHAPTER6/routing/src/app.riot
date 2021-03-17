@@ -39,9 +39,6 @@
         Home,
         Food
       },
-      onBeforeMount(props, state) {
-        // any processing
-      },
       pages: [
         { id: "", title: "Home", body: "Click the link above." },
         { id: "sushi/yellowtail", title: "Sushi", body: "This is the 🍣 page." },
@@ -49,7 +46,7 @@
       ],
       base: `${window.location.protocol}//${window.location.host}`,
       getPageById(route) {
-        const id = route.params.join('/')
+        const id = Object.values(route.params).join('/')
         return this.pages.find(page => page.id === id) || this.pages[0]
       }
     }
