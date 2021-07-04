@@ -15,16 +15,16 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@riotjs/hot-reload": "^4.0.0",
-    "@riotjs/parcel-plugin-riot": "^4.0.1",
-    "parcel-bundler": "^1.12.4"
+    "@riotjs/hot-reload": "^5.0.0",
+    "@riotjs/parcel-plugin-riot": "^5.0.1",
+    "parcel-bundler": "^1.12.5"
   },
   "dependencies": {
     "@datorama/akita": "^4.22.0",
     "@riotjs/observable": "^4.0.4",
-    "@riotjs/route": "^5.3.1",
+    "@riotjs/route": "^7.0.0",
     "axios": "^0.21.1",
-    "riot": "4.11.0",
+    "riot": "^5.3.1",
     "semantic-ui-riot": "^2.2.1"
   }
 }
