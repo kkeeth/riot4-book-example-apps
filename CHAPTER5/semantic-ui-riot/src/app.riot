@@ -3,44 +3,12 @@
     <img src="https://riot.js.org/img/logo/riot-logo.svg" alt="Riot.js logo" class="logo">
   </div>
   <h1>{ props.title }</h1>
-  <ul>
-    <li>
-      <su-checkbox>
-        Make my profile visible
-      </su-checkbox>
-    </li>
-    <li>
-      <su-checkbox class="disabled">
-        Disabled
-      </su-checkbox>
-    </li>
-    <li>
-      <su-checkbox class="slider">
-        Accept terms and conditions
-      </su-checkbox>
-    </li>
-    <li>
-      <su-checkbox
-        class="toggle"
-        checked={ isChecked }
-        onchange={ handleChange }
-      >
-        Subscribe to weekly newsletter
-      </su-checkbox>
-    </li>
-  </ul>
-  <div class="ui message">
-    <p>{ isChecked ? 'on' : 'off' }</p>
-  </div>
-
+  <su-checkbox>
+    Make my profile visible
+  </su-checkbox>
   <script>
     export default {
-      isChecked: false,
       onBeforeMount(props, state) {
-      },
-      handleChange(e) {
-        this.isChecked = e.target.checked
-        this.update()
       }
     }
   </script>
