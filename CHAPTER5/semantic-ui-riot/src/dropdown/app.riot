@@ -3,7 +3,11 @@
     <img src="https://riot.js.org/img/logo/riot-logo.svg" alt="Riot.js logo" class="logo">
   </div>
   <h1>{ props.title }</h1>
-  <su-dropdown items={ dropdownItems } onselect={ handleSelect }></su-dropdown>
+  <su-dropdown
+    items={ dropdownItems }
+    onselect={ handleSelect }
+    search="true"
+  ></su-dropdown>
   <div class="ui message">
     <p>{ selectMenu ? selectMenu.label : 'no select' }</p>
   </div>
