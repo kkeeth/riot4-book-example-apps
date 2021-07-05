@@ -3,9 +3,28 @@
     <img src="https://riot.js.org/img/logo/riot-logo.svg" alt="Riot.js logo" class="logo">
   </div>
   <h1>{ props.title }</h1>
-  <su-checkbox>
-    Make my profile visible
-  </su-checkbox>
+  <ul>
+    <li>
+      <su-checkbox>
+        Make my profile visible
+      </su-checkbox>
+    </li>
+    <li>
+      <su-checkbox class="disabled">
+        Disabled
+      </su-checkbox>
+    </li>
+    <li>
+      <su-checkbox class="slider">
+        Accept terms and conditions
+      </su-checkbox>
+    </li>
+    <li>
+      <su-checkbox class="toggle">
+        Subscribe to weekly newsletter
+      </su-checkbox>
+    </li>
+  </ul>
 
   <script>
     export default {
@@ -17,6 +36,10 @@
   <style>
     :host {
       padding: 2rem;
+    }
+    li {
+      list-style: none;
+      margin: 10px auto;
     }
   </style>
 </app>
