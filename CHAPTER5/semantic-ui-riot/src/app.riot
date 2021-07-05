@@ -20,15 +20,27 @@
       </su-checkbox>
     </li>
     <li>
-      <su-checkbox class="toggle">
+      <su-checkbox
+        class="toggle"
+        checked={ isChecked }
+        onchange={ handleChange }
+      >
         Subscribe to weekly newsletter
       </su-checkbox>
     </li>
   </ul>
+  <div class="ui message">
+    <p>{ isChecked ? 'on' : 'off' }</p>
+  </div>
 
   <script>
     export default {
+      isChecked: false,
       onBeforeMount(props, state) {
+      },
+      handleChange(e) {
+        this.isChecked = e.target.checked
+        this.update()
       }
     }
   </script>
