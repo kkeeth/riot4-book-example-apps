@@ -1,0 +1,63 @@
+<app>
+  <div class="app-header">
+    <img src="https://riot.js.org/img/logo/riot-logo.svg" alt="Riot.js logo" class="logo">
+  </div>
+  <h1>{ props.title }</h1>
+  <su-dropdown items={ dropdownItems } onselect={ handleSelect }></su-dropdown>
+  <div class="ui message">
+    <p>{ selectMenu ? selectMenu.label : 'no select' }</p>
+  </div>
+
+  <script>
+    export default {
+      dropdownItems: [
+        {
+          label: 'Select Friend',
+          value: null,
+          default: true
+        },
+        {
+          label: 'Jenny Hess',
+          image: 'https://placedog.net/50/50',
+          value: 'jenny'
+        },
+        {
+          label: 'Elliot Fu',
+          image: 'https://placekitten.com/50/50',
+          value: 'elliot'
+        },
+        {
+          label: 'Stevie Feliciano',
+          image: 'https://picsum.photos/50/50',
+          value: 'stevie'
+        },
+        {
+          label: 'Christian',
+          image: 'https://placeholder.pics/svg/50x50/3BFF6F-69FFF3/F4FF5F',
+          value: 'christian'
+        },
+        {
+          label: 'Matt',
+          image: 'https://via.placeholder.com/50/50',
+          value: 'matt'
+        }
+      ],
+      onBeforeMount(props, state) {
+      },
+      handleSelect(e) {
+        this.selectMenu = e
+        this.update()
+      }
+    }
+  </script>
+
+  <style>
+    :host {
+      padding: 2rem;
+    }
+    li {
+      list-style: none;
+      margin: 10px auto;
+    }
+  </style>
+</app>
