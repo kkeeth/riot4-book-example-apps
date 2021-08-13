@@ -12,9 +12,9 @@ html.ios body {
 }
 
 body {
-  padding: 1rem 2rem;
+  /* padding: 1rem 2rem; */
   font-family: Futura, Josefin Sans, sans-serif, Helvetica;
-  background-color: #EFEFEF;
+  /* background-color: #EFEFEF; */
 }
 
 .app-header {

@@ -2,10 +2,10 @@
   <login if={ !state.isLoggedIn } />
   <div id="wrapper" if={ state.isLoggedIn }>
     <router base={ base }>
-      <sidebar />
+      <app-sidebar />
       <app-header />
       <div id="container">
-        <app-route />
+        <app-router />
       </div>
       <app-footer />
     </router>
@@ -13,15 +13,15 @@
 
   <script>
     import Login from './pages/login.riot'
-    import Sidebar from './components/sidebar.riot'
+    import AppSidebar from './components/app-sidebar.riot'
     import AppHeader from './components/app-header.riot'
     import AppFooter from './components/app-footer.riot'
-    import AppRouter from './components/app-route.riot'
+    import AppRouter from './components/app-router.riot'
 
     export default {
       components: {
         Login,
-        Sidebar,
+        AppSidebar,
         AppHeader,
         AppFooter,
         AppRouter
@@ -30,9 +30,6 @@
         isLoggedIn: false
       },
       base: window.location.origin,
-      onBeforeMount(props, state) {
-        // any processing
-      },
       onMounted(props, state) {
         this.query.select('isLoggedIn').subscribe(val => {
           this.update({ isLoggedIn: val })
