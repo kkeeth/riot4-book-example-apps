@@ -12,6 +12,6 @@
     "parcel-bundler": "1.12.5"
   },
   "dependencies": {
-    "riot": "^5.4.5"
+    "riot": "^6.0.0"
   }
 }
