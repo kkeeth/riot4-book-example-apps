@@ -13,6 +13,6 @@
   },
   "dependencies": {
     "animore": "^2.0.3",
-    "riot": "^5.4.5"
+    "riot": "^6.0.0"
   }
 }
