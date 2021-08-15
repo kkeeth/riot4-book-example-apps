@@ -12,7 +12,7 @@
   },
   "packageRules": [
     {
-      "updateTypes": ["patch"],
+      "updateTypes": ["minor", "patch"],
       "automerge": true
     },
     {
