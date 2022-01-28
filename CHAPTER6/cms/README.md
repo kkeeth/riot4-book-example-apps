@@ -1,4 +1,4 @@
-# Riot with Parcel Bundler Template
+# CMS app with RiotJS
 [![Netlify Status](https://api.netlify.com/api/v1/badges/51924d84-6a82-4021-a946-f8fa2f07181a/deploy-status)](https://app.netlify.com/sites/cranky-goldwasser-a577a3/deploys)
 ## Usage
 
