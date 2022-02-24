@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "build": "parcel build index.html --out-dir=dist && cp _redirects dist",
     "start": "parcel index.html --open"
   },
   "devDependencies": {
