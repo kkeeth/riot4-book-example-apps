@@ -20,8 +20,8 @@
     "parcel-bundler": "1.12.5"
   },
   "dependencies": {
-    "@datorama/akita": "^7.0.0",
-    "@riotjs/observable": "^4.0.4",
+    "@datorama/akita": "^6.2.3",
+    "@riotjs/observable": "^4.1.1",
     "@riotjs/route": "^8.0.1",
     "riot": "^6.0.3",
     "semantic-ui-riot": "^2.2.4"
