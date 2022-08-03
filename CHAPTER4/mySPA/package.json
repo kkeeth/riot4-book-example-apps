@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "build": "parcel build index.html --out-dir=dist && cp _redirects dist",
     "start": "parcel index.html --open"
   },
   "devDependencies": {
@@ -13,8 +14,8 @@
   },
   "dependencies": {
     "@riotjs/observable": "^4.1.1",
-    "axios": "^0.24.0",
-    "dotenv": "^10.0.0",
+    "axios": "^0.27.0",
+    "dotenv": "^16.0.0",
     "riot": "^6.0.0"
   }
 }
