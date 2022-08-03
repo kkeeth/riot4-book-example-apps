@@ -73,7 +73,6 @@
       },
       onUpdated(props, state) {
         localStorage.setItem('todo state', JSON.stringify(state))
-        console.log(JSON.parse(localStorage['todo state']))
       },
       checkDoneTodo(updatedTodoList) {
         const todoList = updatedTodoList || this.state.todoList
