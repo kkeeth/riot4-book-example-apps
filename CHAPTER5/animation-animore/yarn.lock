@@ -1065,12 +1065,12 @@
   dependencies:
     "@riotjs/util" "^2.0.4"
 
-"@riotjs/hot-reload@6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@riotjs/hot-reload/-/hot-reload-6.0.0.tgz#09a6e46feb9d61a8877378e325b30dc9fc2d82b8"
-  integrity sha512-WgsEWZosmlAltgejBTGREPdZSJ12p4WPdI9RfnN73StTI+i9+6tGVpwSw2spWAf9j5+JEkpPdPuVs5rRRaGuQw==
+"@riotjs/hot-reload@6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/@riotjs/hot-reload/-/hot-reload-6.0.1.tgz#0fc7669dcc8cbf7d399933dbdbc44ca00feecd19"
+  integrity sha512-cPWkT/mcdpeOAheo0YooG/mZDZJebZn6AA28orZ7IIh1emYip45/bghHUi5+q9cEHj3KsP5z6djSVZDUFbBGqA==
   dependencies:
-    bianco.query "^1.0.0"
+    bianco.query "^1.1.4"
 
 "@riotjs/parcel-plugin-riot@6.0.0":
   version "6.0.0"
@@ -1430,7 +1430,7 @@ bianco.query@0.0.7:
   dependencies:
     bianco.dom-to-array "^0.0.8"
 
-bianco.query@^1.0.0, bianco.query@^1.1.4:
+bianco.query@^1.1.4:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/bianco.query/-/bianco.query-1.1.4.tgz#f550c3e7a3478cf65412957a843dc7a64c5e06dd"
   integrity sha512-jUu8l484ckacCBmxN0gYLZ4Ge5aMfReL+aYNiC81s37s8+l0+rn9pnQayEgQtMHGlnL8ejd+x5U2PKpo0rvQzw==
