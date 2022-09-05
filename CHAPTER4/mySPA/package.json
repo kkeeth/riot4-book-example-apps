@@ -16,6 +16,6 @@
     "@riotjs/observable": "^4.1.1",
     "axios": "^0.27.0",
     "dotenv": "^16.0.0",
-    "riot": "^7.0.0"
+    "riot": "^7.0.3"
   }
 }
