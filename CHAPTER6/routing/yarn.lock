@@ -1085,14 +1085,14 @@
     curri "^1.0.1"
     dom-nodes "^1.1.3"
 
-"@riotjs/route@^8.0.1":
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/@riotjs/route/-/route-8.0.1.tgz#f4a27a57defaf9f4eb7d6cfc6d94382ec9c54673"
-  integrity sha512-pDZwnY+9Mh11nUdszn8/wxX3LlpQ9+wDkKfKSgOEpKXX3O2vSL5XTcYhK4zjt8FpquXETFhe/iE9anUvfenNpg==
+"@riotjs/route@^8.0.2":
+  version "8.0.2"
+  resolved "https://registry.yarnpkg.com/@riotjs/route/-/route-8.0.2.tgz#7c625345e2530a4c60b4835b2e143f5c916819eb"
+  integrity sha512-zTLKhoJkpQa7lKOxEYLnSB8wVo9IQMcpZ3ysTgK9Av8yl9FVbO55tiwnShiLair+jOjuBAXvdTqTHBxZDBqrbw==
   dependencies:
-    "@riotjs/util" "^2.0.4"
-    bianco.attr "^1.0.0"
-    bianco.events "^1.0.0"
+    "@riotjs/util" "^2.1.1"
+    bianco.attr "^1.1.1"
+    bianco.events "^1.1.1"
     cumpa "^1.0.1"
     rawth "^2.1.2"
 
@@ -1394,7 +1394,7 @@ bcrypt-pbkdf@^1.0.0:
   dependencies:
     tweetnacl "^0.14.3"
 
-bianco.attr@^1.0.0, bianco.attr@^1.1.1:
+bianco.attr@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/bianco.attr/-/bianco.attr-1.1.1.tgz#d69b22f9165a537159bc45ae60414b0419e6a1d1"
   integrity sha512-fTjfPnnGYiCVbe5UltC/LsDRtJE+MjmadtL749CMIfCwjl18sdbCkaQ7cgtSao6iC9ZJC8Pzw0rjMdIuA6mK1g==
@@ -1406,7 +1406,7 @@ bianco.dom-to-array@^1.1.0:
   resolved "https://registry.yarnpkg.com/bianco.dom-to-array/-/bianco.dom-to-array-1.1.0.tgz#f8ebec7f8ffb26f7a2d0d0ce90551ebcb16f972d"
   integrity sha512-IWUgplQRhJSZh+7PgD/my5+X27PXNUFdcHPosOYz39a/iFF8Wl9d0N/mOArdR7Zgr3J0Q9pKVk7nO6W+7XZwBg==
 
-bianco.events@^1.0.0:
+bianco.events@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/bianco.events/-/bianco.events-1.1.1.tgz#4144cbe4875551121ba22eadb53a9f0f4a686bf0"
   integrity sha512-Ja7oY4xThYgsmfS+JltOnzdAvqP90DVXjbXab0lwrygJdCVRoL0Q4SkEKVMnN1VqNfDtxIUKNlubEUVNp00H7A==
