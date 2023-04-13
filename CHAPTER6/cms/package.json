@@ -23,7 +23,7 @@
     "@datorama/akita": "^6.2.4",
     "@riotjs/observable": "^4.1.1",
     "@riotjs/route": "^8.0.1",
-    "riot": "^7.0.0",
+    "riot": "^7.1.0",
     "semantic-ui-riot": "^2.4.0"
   }
 }
