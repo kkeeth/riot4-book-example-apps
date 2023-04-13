@@ -13,7 +13,7 @@
     "parcel-bundler": "1.12.5"
   },
   "dependencies": {
-    "@riotjs/route": "^8.0.1",
+    "@riotjs/route": "^8.0.2",
     "riot": "^7.0.0"
   }
 }
