@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "ress": "^5.0.0",
-    "riot": "^7.0.0",
-    "semantic-ui-riot": "^2.2.4"
+    "riot": "^7.0.3",
+    "semantic-ui-riot": "^2.4.0"
   }
 }
