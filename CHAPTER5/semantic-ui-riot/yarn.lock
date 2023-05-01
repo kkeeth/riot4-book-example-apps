@@ -4823,9 +4823,9 @@ saxes@^3.1.9:
     xmlchars "^2.1.1"
 
 semantic-ui-riot@^2.4.0:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/semantic-ui-riot/-/semantic-ui-riot-2.4.1.tgz#a4310de52a0cb55383993c55f8cdf2ad12e3d8d6"
-  integrity sha512-2H6I7aumOsB2VS6KfG26iXkRnIAf8O2rnJOQoGUijXU3+zCLn0JccwQlSXS7TFsHl64nFFiB3Jr6s0JTtglEPQ==
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/semantic-ui-riot/-/semantic-ui-riot-2.4.2.tgz#06c6ffac91f5084694ee75ab8f381db9c22d3dae"
+  integrity sha512-AxKSKgmyi4+LRFaVJ61vrBI9Z2kinnpQyQpoPcF6PgsEJCWrADP8Lif7/jUYb3Ef4aqIwUuuTGKoPq2fvysZ1Q==
   dependencies:
     date-fns "^1.29.0"
     q "^1.5.1"
