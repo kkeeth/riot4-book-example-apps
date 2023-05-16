@@ -5519,9 +5519,9 @@ schematics-utilities@^2.0.3:
     parse5 "^5.1.0"
 
 semantic-ui-riot@^2.4.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/semantic-ui-riot/-/semantic-ui-riot-2.5.0.tgz#932a95505c430f3a8c16effa60757c0b8a1799d5"
-  integrity sha512-8RYzlRdaLbJyMj7tuJ3qpW5mbSKMr6wraJobRjRUdxLUbxkM6NP8YshsEonew9llCV4O2x4nfmS49hQrYS5eHQ==
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/semantic-ui-riot/-/semantic-ui-riot-2.5.1.tgz#0b9780a17c7d80e33bc1408ab9f88f7e5222d71f"
+  integrity sha512-kX6U4E4QRjo7AJoNtJlN4E5T9b592aSyBMkNWi1yADE+zxc0atK2epCfZ+UFno8WjVk2dVK2n/b9WChkTRnD1w==
   dependencies:
     date-fns "^2.30.0"
     q "^1.5.1"
