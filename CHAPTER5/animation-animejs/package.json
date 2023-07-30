@@ -13,6 +13,6 @@
   },
   "dependencies": {
     "animejs": "^3.2.1",
-    "riot": "^7.0.0"
+    "riot": "^9.0.0"
   }
 }
