@@ -4818,10 +4818,10 @@ rimraf@^2.6.2:
   dependencies:
     glob "^7.1.3"
 
-riot@^7.0.3:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/riot/-/riot-7.1.0.tgz#7dfef70e5283c7f1d2ac582e6bb4744c5260d944"
-  integrity sha512-gryeKYzil9eyETv8b1Dh+BFdkzS41XQegOSQoFI8GCzxSPm3YA5QA0NVZn5SE2iyVgBrttaIn6cK9yVUI/Iu3A==
+riot@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/riot/-/riot-9.0.0.tgz#8f73d4adcd8053ec9a4c5aedc331ae634d340321"
+  integrity sha512-P3adZglcAO4u2aQAu2vSm+6ErXcBSXgf96UhyzPT/cL803ZUmIuCyoUdGje59jgNwuv6lhJhLgoO5I6xZvVY+w==
 
 ripemd160@^2.0.0, ripemd160@^2.0.1:
   version "2.0.2"
