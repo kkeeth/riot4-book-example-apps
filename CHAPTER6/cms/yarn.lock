@@ -1107,21 +1107,22 @@
   resolved "https://registry.yarnpkg.com/@riotjs/parcel-plugin-riot/-/parcel-plugin-riot-6.0.0.tgz#d2c6dfb74ab0ffd5a12964afb22bc1b52b87143b"
   integrity sha512-LbIuZ6Q++7mmUQYJ74zEn3NkE/Fb5wmtP0iqFMdcFYXhuKN+JurCeRVyH/zbxyUMcoUMD/V4//3a3Wr/Z3l8Xg==
 
-"@riotjs/route@^8.0.1":
-  version "8.0.2"
-  resolved "https://registry.yarnpkg.com/@riotjs/route/-/route-8.0.2.tgz#7c625345e2530a4c60b4835b2e143f5c916819eb"
-  integrity sha512-zTLKhoJkpQa7lKOxEYLnSB8wVo9IQMcpZ3ysTgK9Av8yl9FVbO55tiwnShiLair+jOjuBAXvdTqTHBxZDBqrbw==
+"@riotjs/route@^9.0.0":
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/@riotjs/route/-/route-9.0.0.tgz#49068b9b8f8504142b3273970bbb54081547d859"
+  integrity sha512-Mr1li8RRqHqYj0n0fvhKZakLn9ADsk+r/6pxEVTtVNnEMwcMb7bJXX73qU7SZAbXlqFL4MLPoWRTY2kkFdPa1g==
   dependencies:
-    "@riotjs/util" "^2.1.1"
+    "@riotjs/util" "^2.2.3"
     bianco.attr "^1.1.1"
     bianco.events "^1.1.1"
-    cumpa "^1.0.1"
-    rawth "^2.1.2"
+    bianco.query "^1.1.4"
+    cumpa "^2.0.1"
+    rawth "^3.0.0"
 
-"@riotjs/util@^2.1.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@riotjs/util/-/util-2.2.1.tgz#bade985d1507a8d9400ecb3ea8c671e41950854c"
-  integrity sha512-qoL8REqNPFSGcCaBuzmqKICmVjSimQ3gD7EHrgBqSLgO/7Z83nRtCPcARWwjGHYm8TtDBSFZeton34Qi01XXOg==
+"@riotjs/util@^2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@riotjs/util/-/util-2.2.3.tgz#c9729de607bb5a38609896bb4573cace6c544abf"
+  integrity sha512-Rwx2fAKUSFMWK1MK1vbQQZk8oOkBdHsVz7RCHPMcOJOBHWJaLZ1i6lIshf5rN7dzd7whafSvUcBDMRKU8I+cIA==
 
 "@types/q@^1.5.1":
   version "1.5.5"
@@ -2134,10 +2135,10 @@ cssstyle@^1.1.1:
   dependencies:
     cssom "0.3.x"
 
-cumpa@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/cumpa/-/cumpa-1.0.1.tgz#beff3180ab36e850a157a779d0cf4d997d2c7980"
-  integrity sha512-Ew3sfG4cqvDFINS1VgdvLX1FIruhySlnP6DRLhB+1EjewiOzhJzKRKPEp/TCuo0RDisSFeuaDrk0S4Q8grF9CA==
+cumpa@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/cumpa/-/cumpa-2.0.1.tgz#787c0f2430d58a478e0903d22102a37b177862cc"
+  integrity sha512-8oBF1cSWkgYq0ZsLP9iiLLZDicIh1eYM8WLicRhaSLMrdtjEf9A3DgMYMxB/i/xgVUZGxPVD/hrwVzx/pjdmmw==
 
 dashdash@^1.12.0:
   version "1.14.1"
@@ -2408,10 +2409,10 @@ envinfo@^7.3.1:
   resolved "https://registry.yarnpkg.com/envinfo/-/envinfo-7.10.0.tgz#55146e3909cc5fe63c22da63fb15b05aeac35b13"
   integrity sha512-ZtUjZO6l5mwTHvc1L9+1q5p/R3wTopcfqMW8r5t8SJSKqeVI/LtajORwRFEKpEFuekjD0VBjwu1HMxL4UalIRw==
 
-erre@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/erre/-/erre-2.2.0.tgz#eb2fe100dc9f937f7bc5ed8b0df550058abe2973"
-  integrity sha512-rM+EfZdJCC17CSBGyULHRHfHiUpElGLfAv0g2Eu+xQZOMPAaCZon0odOXKa3EsrCeO4VFKMpXNAGziUzIY0PEA==
+erre@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/erre/-/erre-3.0.1.tgz#71d21e623319feca9c778d8996dc050f30a440f8"
+  integrity sha512-NoexRasUiWU1CcBMh997iybzdKRw4RPhjjiVjPwh1h+aK0PglsR6+7A3osXP5829hXNnarn9Yr1Zi9ThwwV4aA==
   dependencies:
     ruit "^1.0.4"
 
@@ -4131,7 +4132,7 @@ path-parse@^1.0.7:
   resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
   integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
-path-to-regexp@^6.2.0:
+path-to-regexp@^6.2.1:
   version "6.2.1"
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-6.2.1.tgz#d54934d6798eb9e5ef14e7af7962c945906918e5"
   integrity sha512-JLyh7xT1kizaEvcaXOQwOc2/Yhw6KZOvPf1S8401UyLk86CU79LN3vl7ztXGm/pZ+YjoyAJ4rxmHwbkBXJX+yw==
@@ -4663,13 +4664,13 @@ range-parser@~1.2.1:
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.1.tgz#3cf37023d199e1c24d1a55b84800c2f3e6468031"
   integrity sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==
 
-rawth@^2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/rawth/-/rawth-2.1.2.tgz#d3b146d60efc2f59bccaf43f70f43510993f11b6"
-  integrity sha512-RMbHiR+LAuZ2wg0qHR0ADENFTvBfNqtF5QJK/rz1JhJ3CgmGx+WO7aT2wcCLxvtfBvfstrnKj3fdEIWvYB0B9A==
+rawth@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/rawth/-/rawth-3.0.0.tgz#5f2c148575c105689989e0efa2ef25de6a9b783b"
+  integrity sha512-712WxtKAVEhtFm/4keDUefyjxAZR/jKrFR8ownCdjnFUxJstyigv3LBo3Shtd5VPC/p6r5gd6jY0bnAfPSol9Q==
   dependencies:
-    erre "^2.2.0"
-    path-to-regexp "^6.2.0"
+    erre "^3.0.1"
+    path-to-regexp "^6.2.1"
 
 readable-stream@^2.0.2, readable-stream@^2.2.2, readable-stream@^2.3.3, readable-stream@^2.3.6, readable-stream@~2.3.3, readable-stream@~2.3.6:
   version "2.3.8"
