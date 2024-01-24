@@ -1097,10 +1097,10 @@
   dependencies:
     "@riotjs/util" "^2.2.2"
 
-"@riotjs/hot-reload@6.0.1":
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/@riotjs/hot-reload/-/hot-reload-6.0.1.tgz#0fc7669dcc8cbf7d399933dbdbc44ca00feecd19"
-  integrity sha512-cPWkT/mcdpeOAheo0YooG/mZDZJebZn6AA28orZ7IIh1emYip45/bghHUi5+q9cEHj3KsP5z6djSVZDUFbBGqA==
+"@riotjs/hot-reload@9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@riotjs/hot-reload/-/hot-reload-9.0.1.tgz#c63f39be692bcc13d6dd079e6f2a4d2b84f21afd"
+  integrity sha512-/S0m0STCmJgQY1nmSJNyFkE4VWc7oeyJTkakHVTB5CYY/aA6FnlENUjhfe23bzfab/gOkrNk3+M8yuZ0x9HO9g==
   dependencies:
     bianco.query "^1.1.4"
 
