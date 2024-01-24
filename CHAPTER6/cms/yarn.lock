@@ -1090,6 +1090,13 @@
     "@parcel/utils" "^1.11.0"
     physical-cpu-count "^2.0.0"
 
+"@riotjs/dom-bindings@^9.0.3":
+  version "9.0.3"
+  resolved "https://registry.yarnpkg.com/@riotjs/dom-bindings/-/dom-bindings-9.0.3.tgz#4efa690c565d239865047cdb07bea1c80a9c9e9b"
+  integrity sha512-CKQODvoSvzhHGvOPz53dnivdQWiLdq46WtChCwiYUstejf5rJvmkMZI7hpkE88KdhzHMpS7zpEwCsa+jSghG5A==
+  dependencies:
+    "@riotjs/util" "^2.2.2"
+
 "@riotjs/hot-reload@6.0.1":
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/@riotjs/hot-reload/-/hot-reload-6.0.1.tgz#0fc7669dcc8cbf7d399933dbdbc44ca00feecd19"
@@ -1122,6 +1129,11 @@
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@riotjs/util/-/util-2.2.1.tgz#bade985d1507a8d9400ecb3ea8c671e41950854c"
   integrity sha512-qoL8REqNPFSGcCaBuzmqKICmVjSimQ3gD7EHrgBqSLgO/7Z83nRtCPcARWwjGHYm8TtDBSFZeton34Qi01XXOg==
+
+"@riotjs/util@^2.2.2":
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/@riotjs/util/-/util-2.2.4.tgz#d368505aaaffa83c23668b325777fe5f421e968d"
+  integrity sha512-VXQUCANno/Rg1Luieh6eikzdm8mnPHZUjwSYhGKkGoT28qEknU8ntP90C7Br0ARAAX+67HfvM7F4NBtWcEhnOg==
 
 "@types/q@^1.5.1":
   version "1.5.5"
@@ -4879,9 +4891,11 @@ rimraf@^2.6.2:
     glob "^7.1.3"
 
 riot@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/riot/-/riot-9.0.0.tgz#8f73d4adcd8053ec9a4c5aedc331ae634d340321"
-  integrity sha512-P3adZglcAO4u2aQAu2vSm+6ErXcBSXgf96UhyzPT/cL803ZUmIuCyoUdGje59jgNwuv6lhJhLgoO5I6xZvVY+w==
+  version "9.1.2"
+  resolved "https://registry.yarnpkg.com/riot/-/riot-9.1.2.tgz#5a87409ccece1ddd7835ca2110f1c66a5d5d4128"
+  integrity sha512-VC/+TeXfb0bqw/iC38imO0j2SgGBLjAEhrtv+Mwf9d3aNioWZROI6N+4QEi1N6+7dqQh/5iOx42SH/pPo0tFuA==
+  dependencies:
+    "@riotjs/dom-bindings" "^9.0.3"
 
 ripemd160@^2.0.0, ripemd160@^2.0.1:
   version "2.0.2"
