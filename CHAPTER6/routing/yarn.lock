@@ -1085,12 +1085,12 @@
     "@parcel/utils" "^1.11.0"
     physical-cpu-count "^2.0.0"
 
-"@riotjs/dom-bindings@^9.0.3":
-  version "9.0.3"
-  resolved "https://registry.yarnpkg.com/@riotjs/dom-bindings/-/dom-bindings-9.0.3.tgz#4efa690c565d239865047cdb07bea1c80a9c9e9b"
-  integrity sha512-CKQODvoSvzhHGvOPz53dnivdQWiLdq46WtChCwiYUstejf5rJvmkMZI7hpkE88KdhzHMpS7zpEwCsa+jSghG5A==
+"@riotjs/dom-bindings@^9.0.4":
+  version "9.0.4"
+  resolved "https://registry.yarnpkg.com/@riotjs/dom-bindings/-/dom-bindings-9.0.4.tgz#8c9c1e1e2e32fbe06c567c050dceea58fb949be9"
+  integrity sha512-qtBMLoUTqX6ln1Ncp4xZxaG5NOmvEePEbU+ibku2VtlFMegoHBFiuJLAyLiFoCChOGvyzyQVhO+IKoG3xAluiw==
   dependencies:
-    "@riotjs/util" "^2.2.2"
+    "@riotjs/util" "^2.2.4"
 
 "@riotjs/hot-reload@6.0.1":
   version "6.0.1"
@@ -1120,7 +1120,7 @@
   resolved "https://registry.yarnpkg.com/@riotjs/util/-/util-2.2.1.tgz#bade985d1507a8d9400ecb3ea8c671e41950854c"
   integrity sha512-qoL8REqNPFSGcCaBuzmqKICmVjSimQ3gD7EHrgBqSLgO/7Z83nRtCPcARWwjGHYm8TtDBSFZeton34Qi01XXOg==
 
-"@riotjs/util@^2.2.2":
+"@riotjs/util@^2.2.4":
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/@riotjs/util/-/util-2.2.4.tgz#d368505aaaffa83c23668b325777fe5f421e968d"
   integrity sha512-VXQUCANno/Rg1Luieh6eikzdm8mnPHZUjwSYhGKkGoT28qEknU8ntP90C7Br0ARAAX+67HfvM7F4NBtWcEhnOg==
@@ -4873,12 +4873,12 @@ rimraf@^2.6.2:
   dependencies:
     glob "^7.1.3"
 
-riot@^9.0.0:
-  version "9.1.2"
-  resolved "https://registry.yarnpkg.com/riot/-/riot-9.1.2.tgz#5a87409ccece1ddd7835ca2110f1c66a5d5d4128"
-  integrity sha512-VC/+TeXfb0bqw/iC38imO0j2SgGBLjAEhrtv+Mwf9d3aNioWZROI6N+4QEi1N6+7dqQh/5iOx42SH/pPo0tFuA==
+riot@^9.1.3:
+  version "9.1.4"
+  resolved "https://registry.yarnpkg.com/riot/-/riot-9.1.4.tgz#a224689790f0b43e221a4659da2a6919860d5079"
+  integrity sha512-L9nstYUkeWvRqbwbVwvNsb+bcDHNWDcyt5k/B8hVTEV4QF1ns0jEc9uuoKCi+DfCPgtghyuLMM9MDszvS81/gQ==
   dependencies:
-    "@riotjs/dom-bindings" "^9.0.3"
+    "@riotjs/dom-bindings" "^9.0.4"
 
 ripemd160@^2.0.0, ripemd160@^2.0.1:
   version "2.0.2"
