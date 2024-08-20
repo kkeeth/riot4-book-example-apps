@@ -22,7 +22,7 @@
   "dependencies": {
     "@datorama/akita": "^8.0.0",
     "@riotjs/observable": "^4.1.1",
-    "@riotjs/route": "^8.0.1",
+    "@riotjs/route": "^9.0.0",
     "riot": "^9.0.0",
     "semantic-ui-riot": "^2.4.0"
   }
