@@ -10,11 +10,11 @@ importers:
     dependencies:
       riot:
         specifier: ^9.0.0
-        version: 9.2.2
+        version: 9.4.9
     devDependencies:
       '@riotjs/hot-reload':
         specifier: 9.0.1
-        version: 9.0.1(riot@9.2.2)
+        version: 9.0.1(riot@9.4.9)
       '@riotjs/parcel-plugin-riot':
         specifier: 6.0.0
         version: 6.0.0(@riotjs/compiler@6.4.2)(parcel-bundler@1.12.5)
@@ -119,8 +119,16 @@ packages:
     resolution: {integrity: sha512-pO9KhhRcuUyGnJWwyEgnRJTSIZHiT+vMD0kPeD+so0l7mxkMT19g3pjY9GTnHySck/hDzq+dtW/4VgnMkippsQ==}
     engines: {node: '>=6.9.0'}
 
+  '@babel/helper-string-parser@7.27.1':
+    resolution: {integrity: sha512-qMlSxKbpRlAridDExk92nSobyDdpPijUq2DW6oDnUqd0iOGxmQjyqhMIihI9+zv4LPyZdRje2cavWPbCbWm3eA==}
+    engines: {node: '>=6.9.0'}
+
   '@babel/helper-validator-identifier@7.24.7':
     resolution: {integrity: sha512-rR+PBcQ1SMQDDyF6X0wxtG8QyLCgUB0eRAGguqRLfkCA87l7yAP7ehq8SNj96OOGTO8OBV70KhuFYcIkHXOg0w==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/helper-validator-identifier@7.27.1':
+    resolution: {integrity: sha512-D2hP9eA+Sqx1kBZgzxZh0y1trbuU+JoDkiEwqhQ36nodYqJwyEIhPSdMNd7lOm/4io72luTPWH20Yda0xOuUow==}
     engines: {node: '>=6.9.0'}
 
   '@babel/helper-validator-option@7.24.8':
@@ -141,6 +149,11 @@ packages:
 
   '@babel/parser@7.25.3':
     resolution: {integrity: sha512-iLTJKDbJ4hMvFPgQwwsVoxtHyWpKKPBrxkANrSYewDPaPpT5py5yeVkgPIJ7XYXhndxJpaA3PyALSXQ7u8e/Dw==}
+    engines: {node: '>=6.0.0'}
+    hasBin: true
+
+  '@babel/parser@7.27.5':
+    resolution: {integrity: sha512-OsQd175SxWkGlzbny8J3K8TnnDD0N3lrIUtB92xwyRpzaenGZhxDvxN/JgU00U3CDZNj9tPuDJ5H0WS4Nt3vKg==}
     engines: {node: '>=6.0.0'}
     hasBin: true
 
@@ -624,6 +637,10 @@ packages:
     resolution: {integrity: sha512-YTnYtra7W9e6/oAZEHj0bJehPRUlLH9/fbpT5LfB0NhQXyALCRkRs3zH9v07IYhkgpqX6Z78FnuccZr/l4Fs4Q==}
     engines: {node: '>=6.9.0'}
 
+  '@babel/types@7.27.6':
+    resolution: {integrity: sha512-ETyHEk2VHHvl9b9jZP5IHPavHYk57EhanlRRuae9XCpb/j5bDCbPPMOBfCWhnl/7EDJz0jEMCi/RhccCE8r1+Q==}
+    engines: {node: '>=6.9.0'}
+
   '@iarna/toml@2.2.5':
     resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
 
@@ -678,8 +695,8 @@ packages:
   '@riotjs/compiler@6.4.2':
     resolution: {integrity: sha512-MsxPHcOPVAi3bBiS/SW0DS1kxxki9+QS1FsBhKRs+oqFNEUlIm/ESt9BudSB9ISblL18q9Y8Z5uGOrmUXOga8Q==}
 
-  '@riotjs/dom-bindings@9.0.4':
-    resolution: {integrity: sha512-qtBMLoUTqX6ln1Ncp4xZxaG5NOmvEePEbU+ibku2VtlFMegoHBFiuJLAyLiFoCChOGvyzyQVhO+IKoG3xAluiw==}
+  '@riotjs/dom-bindings@9.2.8':
+    resolution: {integrity: sha512-Q9HmhUpleYcKGq0U9rVkYh36JjJ9q4vJ5Ck1ZtarNrr0dJBwgREsnj42wBA+1aFo6MoXT2SJECZfTpAfUEQH9g==}
 
   '@riotjs/hot-reload@9.0.1':
     resolution: {integrity: sha512-/S0m0STCmJgQY1nmSJNyFkE4VWc7oeyJTkakHVTB5CYY/aA6FnlENUjhfe23bzfab/gOkrNk3+M8yuZ0x9HO9g==}
@@ -699,8 +716,8 @@ packages:
   '@riotjs/util@2.1.1':
     resolution: {integrity: sha512-uE3yhckx6QhFESlA/jO/Nj8HcOeRiCV3Zw1OrdKiRAMh4o/JBhGuAkoknPWCDTHSFIffHuWV8EorbO1wZLBpvw==}
 
-  '@riotjs/util@2.4.0':
-    resolution: {integrity: sha512-zhuJobO+FsmA6hKS9qPIjQ2SLI+kY29JtAztNtbI8EsE0vyF9YQLRNPRt2wi3uozxgC1YFe/9o0Olzo3HQ6XYw==}
+  '@riotjs/util@2.5.1':
+    resolution: {integrity: sha512-P4dC9H3pqsZBk5ffi8BjcRYRvTJpukOj5oRDDClxz/syDHjxZOyOGalLtYVdck3RVb2BYlKWT2rDgy+aDe276w==}
 
   '@types/q@1.5.8':
     resolution: {integrity: sha512-hroOstUScF6zhIi+5+x0dzqrHA1EJi+Irri6b1fxolMTqqHIV/Cg77EtnQcZqZCu8hR3mX2BzIxN4/GzI68Kfw==}
@@ -1532,7 +1549,7 @@ packages:
     resolution: {integrity: sha512-oWb1Z6mkHIskLzEJ/XWX0srkpkTQ7vaopMQkyaEIoq0fmtFVxOthb8cCxeT+p3ynTdkk/RZwbgG4brR5BeWECw==}
     engines: {node: '>= 4.0'}
     os: [darwin]
-    deprecated: The v1 package contains DANGEROUS / INSECURE binaries. Upgrade to safe fsevents v2
+    deprecated: Upgrade to fsevents v2 to mitigate potential security issues
 
   function-bind@1.1.2:
     resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
@@ -1983,6 +2000,7 @@ packages:
 
   lodash.clone@4.5.0:
     resolution: {integrity: sha512-GhrVeweiTD6uTmmn5hV/lzgCQhccwReIVRLHp7LT4SopOjqEZ5BbX8b5WWEtAKasjmy8hR7ZPwsYlxRCku5odg==}
+    deprecated: This package is deprecated. Use structuredClone instead.
 
   lodash.debounce@4.0.8:
     resolution: {integrity: sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==}
@@ -2608,8 +2626,8 @@ packages:
     deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
-  riot@9.2.2:
-    resolution: {integrity: sha512-Okv0q/lTDflTnHgVnS8+UPhfJWnbT6FxDqJePibCrY5fzQjQxF4MESjqYNq1kxounBpgFDCzhf9t3rvy3MZYHA==}
+  riot@9.4.9:
+    resolution: {integrity: sha512-Xl3Y6pBFUxJGtN89jaCXEWydOo/qg7+zPZFwH+eRehAaO/gwsOomrgWGqrJMUEeF7jYB/riFdgd5WUA3y1DqiQ==}
     engines: {node: '>=18.0.0'}
 
   ripemd160@2.0.2:
@@ -2899,8 +2917,8 @@ packages:
   tr46@1.0.1:
     resolution: {integrity: sha512-dTpowEjclQ7Kgx5SdBkqRzVhERQXov8/l9Ft9dVM9fmg0W0KQSVaXX9T4i6twCPNtYiZM53lpSSUAwJbFPOHxA==}
 
-  tslib@2.6.3:
-    resolution: {integrity: sha512-xNvxJEOUiWPGhUuUdQgAJPKOOJfGnIyKySOc09XkKsgdUV/3E2zvwZYdejjmRgPCgcym1juLH3226yA7sEFJKQ==}
+  tslib@2.8.1:
+    resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
   tty-browserify@0.0.0:
     resolution: {integrity: sha512-JVa5ijo+j/sOoHGjw0sxw734b1LhBkQ3bvUGNdxnVXDCX81Yx7TFgnZygxrIIWn23hbfTaMYLwRmAxFyDuFmIw==}
@@ -3270,7 +3288,11 @@ snapshots:
 
   '@babel/helper-string-parser@7.24.8': {}
 
+  '@babel/helper-string-parser@7.27.1': {}
+
   '@babel/helper-validator-identifier@7.24.7': {}
+
+  '@babel/helper-validator-identifier@7.27.1': {}
 
   '@babel/helper-validator-option@7.24.8': {}
 
@@ -3297,6 +3319,10 @@ snapshots:
   '@babel/parser@7.25.3':
     dependencies:
       '@babel/types': 7.25.2
+
+  '@babel/parser@7.27.5':
+    dependencies:
+      '@babel/types': 7.27.6
 
   '@babel/plugin-bugfix-firefox-class-in-computed-class-key@7.25.3(@babel/core@7.25.2)':
     dependencies:
@@ -3910,6 +3936,11 @@ snapshots:
       '@babel/helper-validator-identifier': 7.24.7
       to-fast-properties: 2.0.0
 
+  '@babel/types@7.27.6':
+    dependencies:
+      '@babel/helper-string-parser': 7.27.1
+      '@babel/helper-validator-identifier': 7.27.1
+
   '@iarna/toml@2.2.5': {}
 
   '@jridgewell/gen-mapping@0.3.5':
@@ -3971,7 +4002,7 @@ snapshots:
 
   '@riotjs/compiler@6.4.2':
     dependencies:
-      '@babel/parser': 7.25.3
+      '@babel/parser': 7.27.5
       '@riotjs/parser': 4.3.1
       '@riotjs/util': 2.1.1
       cssesc: 3.0.0
@@ -3982,14 +4013,14 @@ snapshots:
       recast: 0.20.5
       source-map: 0.7.4
 
-  '@riotjs/dom-bindings@9.0.4':
+  '@riotjs/dom-bindings@9.2.8':
     dependencies:
-      '@riotjs/util': 2.4.0
+      '@riotjs/util': 2.5.1
 
-  '@riotjs/hot-reload@9.0.1(riot@9.2.2)':
+  '@riotjs/hot-reload@9.0.1(riot@9.4.9)':
     dependencies:
       bianco.query: 1.1.4
-      riot: 9.2.2
+      riot: 9.4.9
 
   '@riotjs/parcel-plugin-riot@6.0.0(@riotjs/compiler@6.4.2)(parcel-bundler@1.12.5)':
     dependencies:
@@ -4003,7 +4034,7 @@ snapshots:
 
   '@riotjs/util@2.1.1': {}
 
-  '@riotjs/util@2.4.0': {}
+  '@riotjs/util@2.5.1': {}
 
   '@types/q@1.5.8': {}
 
@@ -4113,7 +4144,7 @@ snapshots:
 
   ast-types@0.14.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   async-each@1.0.6: {}
 
@@ -6207,7 +6238,7 @@ snapshots:
       ast-types: 0.14.2
       esprima: 4.0.1
       source-map: 0.6.1
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   regenerate-unicode-properties@10.1.1:
     dependencies:
@@ -6316,9 +6347,9 @@ snapshots:
     dependencies:
       glob: 7.2.3
 
-  riot@9.2.2:
+  riot@9.4.9:
     dependencies:
-      '@riotjs/dom-bindings': 9.0.4
+      '@riotjs/dom-bindings': 9.2.8
 
   ripemd160@2.0.2:
     dependencies:
@@ -6684,7 +6715,7 @@ snapshots:
     dependencies:
       punycode: 2.3.1
 
-  tslib@2.6.3: {}
+  tslib@2.8.1: {}
 
   tty-browserify@0.0.0: {}
 
