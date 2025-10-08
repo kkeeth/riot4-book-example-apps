@@ -1,8 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="lib/style.css">
-    <script type="text/javascript" src="https://unpkg.com/riot@4/riot+compiler.min.js"></script>
+    <link rel="stylesheet" href="lib/style.css" />
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/riot@10/riot+compiler.min.js"
+    ></script>
     <script src="lib/script.js"></script>
   </head>
 
@@ -11,13 +14,11 @@
 
     <script type="riot" src="./app.riot"></script>
     <script>
-      riot
-        .compile()
-        .then(() => {
-          riot.mount('app', {
-            title: 'Hello Riot.js!'
-          })
-        })
+      riot.compile().then(() => {
+        riot.mount("app", {
+          title: "Hello Riot.js!",
+        });
+      });
     </script>
   </body>
 </html>

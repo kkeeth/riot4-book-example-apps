@@ -12,7 +12,7 @@
     "parcel-bundler": "1.12.5"
   },
   "dependencies": {
-    "animejs": "^4.0.0",
-    "riot": "^10.0.0"
+    "animejs": "^4.2.1",
+    "riot": "^10.0.1"
   }
 }
