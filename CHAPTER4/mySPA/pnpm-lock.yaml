@@ -19,11 +19,11 @@ importers:
         version: 17.2.3
       riot:
         specifier: ^9.0.0
-        version: 9.4.9
+        version: 9.4.11
     devDependencies:
       '@riotjs/hot-reload':
         specifier: 9.0.1
-        version: 9.0.1(riot@9.4.9)
+        version: 9.0.1(riot@9.4.11)
       '@riotjs/parcel-plugin-riot':
         specifier: 6.0.0
         version: 6.0.0(@riotjs/compiler@6.4.2)(parcel-bundler@1.12.5)
@@ -2629,8 +2629,8 @@ packages:
     deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
-  riot@9.4.9:
-    resolution: {integrity: sha512-Xl3Y6pBFUxJGtN89jaCXEWydOo/qg7+zPZFwH+eRehAaO/gwsOomrgWGqrJMUEeF7jYB/riFdgd5WUA3y1DqiQ==}
+  riot@9.4.11:
+    resolution: {integrity: sha512-xLenuo6UAF2IHMWXyCeRYR9vvgl0wgzISbZikfHylMBZvT1Ixbk4k5i6JG+9yKmkHL+FtcZ1Yu7fzsPGNN1ozg==}
     engines: {node: '>=18.0.0'}
 
   ripemd160@2.0.2:
@@ -3923,10 +3923,10 @@ snapshots:
     dependencies:
       '@riotjs/util': 2.5.1
 
-  '@riotjs/hot-reload@9.0.1(riot@9.4.9)':
+  '@riotjs/hot-reload@9.0.1(riot@9.4.11)':
     dependencies:
       bianco.query: 1.1.4
-      riot: 9.4.9
+      riot: 9.4.11
 
   '@riotjs/observable@4.1.1': {}
 
@@ -6371,7 +6371,7 @@ snapshots:
     dependencies:
       glob: 7.2.3
 
-  riot@9.4.9:
+  riot@9.4.11:
     dependencies:
       '@riotjs/dom-bindings': 9.2.8
 
