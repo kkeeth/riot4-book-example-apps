@@ -12,12 +12,12 @@ importers:
         specifier: ^4.0.0
         version: 4.0.2
       riot:
-        specifier: ^9.0.0
-        version: 9.4.9
+        specifier: ^10.0.0
+        version: 10.0.1
     devDependencies:
       '@riotjs/hot-reload':
         specifier: 9.0.1
-        version: 9.0.1(riot@9.4.9)
+        version: 9.0.1(riot@10.0.1)
       '@riotjs/parcel-plugin-riot':
         specifier: 6.0.0
         version: 6.0.0(@riotjs/compiler@6.4.2)(parcel-bundler@1.12.5)
@@ -594,8 +594,8 @@ packages:
   '@riotjs/compiler@6.4.2':
     resolution: {integrity: sha512-MsxPHcOPVAi3bBiS/SW0DS1kxxki9+QS1FsBhKRs+oqFNEUlIm/ESt9BudSB9ISblL18q9Y8Z5uGOrmUXOga8Q==}
 
-  '@riotjs/dom-bindings@9.2.8':
-    resolution: {integrity: sha512-Q9HmhUpleYcKGq0U9rVkYh36JjJ9q4vJ5Ck1ZtarNrr0dJBwgREsnj42wBA+1aFo6MoXT2SJECZfTpAfUEQH9g==}
+  '@riotjs/dom-bindings@10.0.3':
+    resolution: {integrity: sha512-7Y+1JOltbDEPhNACyzNatFkcGC0okNxmeZYxjdZsjmG3MyqID2bILmbL+SbO+JsGFhQXRei8XXPW9G6t70eJqA==}
 
   '@riotjs/hot-reload@9.0.1':
     resolution: {integrity: sha512-/S0m0STCmJgQY1nmSJNyFkE4VWc7oeyJTkakHVTB5CYY/aA6FnlENUjhfe23bzfab/gOkrNk3+M8yuZ0x9HO9g==}
@@ -612,11 +612,11 @@ packages:
     resolution: {integrity: sha512-ZUeAcey3ShAtquHBwuHFLrtPL1j0iEeXoOQoaZMaqVp15vq5UqOBxBcOVNfCXbr9ZbhnVCEEmek/9YFt5Ni8bA==}
     engines: {node: '>=4.2', npm: '>=3.0'}
 
+  '@riotjs/util@10.0.0':
+    resolution: {integrity: sha512-m+whXlT693F+8JVITflMLoKp4VxqTaFCBHWom5FULzFAA7VE2ipvQN5u6T//2OT3RyHGp7tQRlDKrVXwEyV7Jg==}
+
   '@riotjs/util@2.1.1':
     resolution: {integrity: sha512-uE3yhckx6QhFESlA/jO/Nj8HcOeRiCV3Zw1OrdKiRAMh4o/JBhGuAkoknPWCDTHSFIffHuWV8EorbO1wZLBpvw==}
-
-  '@riotjs/util@2.5.1':
-    resolution: {integrity: sha512-P4dC9H3pqsZBk5ffi8BjcRYRvTJpukOj5oRDDClxz/syDHjxZOyOGalLtYVdck3RVb2BYlKWT2rDgy+aDe276w==}
 
   '@types/q@1.5.8':
     resolution: {integrity: sha512-hroOstUScF6zhIi+5+x0dzqrHA1EJi+Irri6b1fxolMTqqHIV/Cg77EtnQcZqZCu8hR3mX2BzIxN4/GzI68Kfw==}
@@ -2591,8 +2591,8 @@ packages:
     deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
-  riot@9.4.9:
-    resolution: {integrity: sha512-Xl3Y6pBFUxJGtN89jaCXEWydOo/qg7+zPZFwH+eRehAaO/gwsOomrgWGqrJMUEeF7jYB/riFdgd5WUA3y1DqiQ==}
+  riot@10.0.1:
+    resolution: {integrity: sha512-+MQB4O7kBycfGZa6TaF/AXi5WmsbEvx1XszGtt1wlUKXN7YFsMf5B7cjXTqI1r6jXB6pFAUuDQQAovChxXutcw==}
     engines: {node: '>=18.0.0'}
 
   ripemd160@2.0.2:
@@ -3872,14 +3872,14 @@ snapshots:
       recast: 0.20.5
       source-map: 0.7.4
 
-  '@riotjs/dom-bindings@9.2.8':
+  '@riotjs/dom-bindings@10.0.3':
     dependencies:
-      '@riotjs/util': 2.5.1
+      '@riotjs/util': 10.0.0
 
-  '@riotjs/hot-reload@9.0.1(riot@9.4.9)':
+  '@riotjs/hot-reload@9.0.1(riot@10.0.1)':
     dependencies:
       bianco.query: 1.1.4
-      riot: 9.4.9
+      riot: 10.0.1
 
   '@riotjs/parcel-plugin-riot@6.0.0(@riotjs/compiler@6.4.2)(parcel-bundler@1.12.5)':
     dependencies:
@@ -3891,9 +3891,9 @@ snapshots:
       curri: 1.0.1
       dom-nodes: 1.1.3
 
-  '@riotjs/util@2.1.1': {}
+  '@riotjs/util@10.0.0': {}
 
-  '@riotjs/util@2.5.1': {}
+  '@riotjs/util@2.1.1': {}
 
   '@types/q@1.5.8': {}
 
@@ -6302,9 +6302,9 @@ snapshots:
     dependencies:
       glob: 7.2.3
 
-  riot@9.4.9:
+  riot@10.0.1:
     dependencies:
-      '@riotjs/dom-bindings': 9.2.8
+      '@riotjs/dom-bindings': 10.0.3
 
   ripemd160@2.0.2:
     dependencies:
