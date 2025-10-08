@@ -10,7 +10,7 @@ importers:
     dependencies:
       animejs:
         specifier: ^4.2.1
-        version: 4.2.1
+        version: 4.2.2
       riot:
         specifier: ^10.0.1
         version: 10.0.1
@@ -657,8 +657,8 @@ packages:
   alphanum-sort@1.0.2:
     resolution: {integrity: sha512-0FcBfdcmaumGPQ0qPn7Q5qTgz/ooXgIyp1rf8ik5bGX8mpE2YHjC0P/eyQvxu1GURYQgq9ozf2mteQ5ZD9YiyQ==}
 
-  animejs@4.2.1:
-    resolution: {integrity: sha512-KHtQ1fC89wc9Lsaos9hmadyr8FUenxUnaOfpK8Lr8oAVtu2KUzTwBcaHtfwNOnNdZbgQVQCEdy3KKqawerDutQ==}
+  animejs@4.2.2:
+    resolution: {integrity: sha512-Ys3RuvLdAeI14fsdKCQy7ytu4057QX6Bb7m4jwmfd6iKmUmLquTwk1ut0e4NtRQgCeq/s2Lv5+oMBjz6c7ZuIg==}
 
   ansi-regex@2.1.1:
     resolution: {integrity: sha512-TIGnTpdo+E3+pCyAluZvtED5p5wCqLdezCyhPZzKPcxvFplEt4i+W7OONCKgeZFT3+y5NZZfOOS/Bdcanm1MYA==}
@@ -3948,7 +3948,7 @@ snapshots:
 
   alphanum-sort@1.0.2: {}
 
-  animejs@4.2.1: {}
+  animejs@4.2.2: {}
 
   ansi-regex@2.1.1: {}
 
