@@ -13,14 +13,14 @@ importers:
         version: 5.0.2
       riot:
         specifier: ^10.0.1
-        version: 10.0.1
+        version: 10.1.2
       semantic-ui-riot:
         specifier: ^2.5.3
-        version: 2.5.3(@riotjs/observable@4.1.1)(riot@10.0.1)
+        version: 2.5.3(@riotjs/observable@4.1.1)(riot@10.1.2)
     devDependencies:
       '@riotjs/hot-reload':
         specifier: 9.0.1
-        version: 9.0.1(riot@10.0.1)
+        version: 9.0.1(riot@10.1.2)
       '@riotjs/parcel-plugin-riot':
         specifier: 6.0.0
         version: 6.0.0(@riotjs/compiler@6.4.2)(parcel-bundler@1.12.5)
@@ -121,6 +121,10 @@ packages:
     resolution: {integrity: sha512-D2hP9eA+Sqx1kBZgzxZh0y1trbuU+JoDkiEwqhQ36nodYqJwyEIhPSdMNd7lOm/4io72luTPWH20Yda0xOuUow==}
     engines: {node: '>=6.9.0'}
 
+  '@babel/helper-validator-identifier@7.28.5':
+    resolution: {integrity: sha512-qSs4ifwzKJSV39ucNjsvc6WVHs6b7S03sOh2OcHF9UHfVPqWWALUsNUVzhSBiItjRZoLHx7nIarVjqKVusUZ1Q==}
+    engines: {node: '>=6.9.0'}
+
   '@babel/helper-validator-option@7.27.1':
     resolution: {integrity: sha512-YvjJow9FxbhFFKDSuFnVCe2WxXk1zWc22fFePVNEaWJEu8IrZVlda6N0uHwzZrUM1il7NC9Mlp4MaJYbYd9JSg==}
     engines: {node: '>=6.9.0'}
@@ -135,6 +139,11 @@ packages:
 
   '@babel/parser@7.28.4':
     resolution: {integrity: sha512-yZbBqeM6TkpP9du/I2pUZnJsRMGGvOuIrhjzC1AwHwW+6he4mni6Bp/m8ijn0iOuZuPI2BfkCoSRunpyjnrQKg==}
+    engines: {node: '>=6.0.0'}
+    hasBin: true
+
+  '@babel/parser@7.28.5':
+    resolution: {integrity: sha512-KKBU1VGYR7ORr3At5HAtUQ+TV3SzRCXmA/8OdDZiLDBIZxVyzXuztPjfLd3BV1PRAQGCMWWSHYhL0F8d5uHBDQ==}
     engines: {node: '>=6.0.0'}
     hasBin: true
 
@@ -549,6 +558,10 @@ packages:
     resolution: {integrity: sha512-bkFqkLhh3pMBUQQkpVgWDWq/lqzc2678eUyDlTBhRqhCHFguYYGM0Efga7tYk4TogG/3x0EEl66/OQ+WGbWB/Q==}
     engines: {node: '>=6.9.0'}
 
+  '@babel/types@7.28.5':
+    resolution: {integrity: sha512-qQ5m48eI/MFLQ5PxQj4PFaprjyCTLI37ElWMmNs0K8Lk3dVeOdNpB3ks8jc7yM5CDmVC73eMVk/trk3fgmrUpA==}
+    engines: {node: '>=6.9.0'}
+
   '@iarna/toml@2.2.5':
     resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
 
@@ -601,8 +614,8 @@ packages:
   '@riotjs/compiler@6.4.2':
     resolution: {integrity: sha512-MsxPHcOPVAi3bBiS/SW0DS1kxxki9+QS1FsBhKRs+oqFNEUlIm/ESt9BudSB9ISblL18q9Y8Z5uGOrmUXOga8Q==}
 
-  '@riotjs/dom-bindings@10.0.3':
-    resolution: {integrity: sha512-7Y+1JOltbDEPhNACyzNatFkcGC0okNxmeZYxjdZsjmG3MyqID2bILmbL+SbO+JsGFhQXRei8XXPW9G6t70eJqA==}
+  '@riotjs/dom-bindings@10.0.4':
+    resolution: {integrity: sha512-bOvYWhG60GI3tCBfCqmfTQ/M8wvQnR/2JB6a4D5ko7CB1mymdzEZ9G3sV6eh+aXkQ4EX7cMKpxCF7KbCSFPs6A==}
 
   '@riotjs/hot-reload@9.0.1':
     resolution: {integrity: sha512-/S0m0STCmJgQY1nmSJNyFkE4VWc7oeyJTkakHVTB5CYY/aA6FnlENUjhfe23bzfab/gOkrNk3+M8yuZ0x9HO9g==}
@@ -622,8 +635,8 @@ packages:
     resolution: {integrity: sha512-ZUeAcey3ShAtquHBwuHFLrtPL1j0iEeXoOQoaZMaqVp15vq5UqOBxBcOVNfCXbr9ZbhnVCEEmek/9YFt5Ni8bA==}
     engines: {node: '>=4.2', npm: '>=3.0'}
 
-  '@riotjs/util@10.0.0':
-    resolution: {integrity: sha512-m+whXlT693F+8JVITflMLoKp4VxqTaFCBHWom5FULzFAA7VE2ipvQN5u6T//2OT3RyHGp7tQRlDKrVXwEyV7Jg==}
+  '@riotjs/util@10.1.2':
+    resolution: {integrity: sha512-K85suj+5YItWHB5N6LO1uMJNH6ZMBl8FxGH2xDb6dl8V3EBlLuQaPQGVzp3SOKKqeqcxJH3o5UHHIgjc2I8YrA==}
 
   '@riotjs/util@2.1.1':
     resolution: {integrity: sha512-uE3yhckx6QhFESlA/jO/Nj8HcOeRiCV3Zw1OrdKiRAMh4o/JBhGuAkoknPWCDTHSFIffHuWV8EorbO1wZLBpvw==}
@@ -2608,8 +2621,8 @@ packages:
     deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
-  riot@10.0.1:
-    resolution: {integrity: sha512-+MQB4O7kBycfGZa6TaF/AXi5WmsbEvx1XszGtt1wlUKXN7YFsMf5B7cjXTqI1r6jXB6pFAUuDQQAovChxXutcw==}
+  riot@10.1.2:
+    resolution: {integrity: sha512-cNY7LVWJ6yDcIkIbB814CxpB81uH3aGLZtyupxJjmmftwWvyakxmvxeqe0L/ZGCoLeWcHGaW/Cn98bDXIOVWOQ==}
     engines: {node: '>=18.0.0'}
 
   ripemd160@2.0.3:
@@ -3299,6 +3312,8 @@ snapshots:
 
   '@babel/helper-validator-identifier@7.27.1': {}
 
+  '@babel/helper-validator-identifier@7.28.5': {}
+
   '@babel/helper-validator-option@7.27.1': {}
 
   '@babel/helper-wrap-function@7.28.3':
@@ -3317,6 +3332,10 @@ snapshots:
   '@babel/parser@7.28.4':
     dependencies:
       '@babel/types': 7.28.4
+
+  '@babel/parser@7.28.5':
+    dependencies:
+      '@babel/types': 7.28.5
 
   '@babel/plugin-bugfix-firefox-class-in-computed-class-key@7.27.1(@babel/core@7.28.4)':
     dependencies:
@@ -3841,6 +3860,11 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
 
+  '@babel/types@7.28.5':
+    dependencies:
+      '@babel/helper-string-parser': 7.27.1
+      '@babel/helper-validator-identifier': 7.28.5
+
   '@iarna/toml@2.2.5': {}
 
   '@jridgewell/gen-mapping@0.3.13':
@@ -3904,7 +3928,7 @@ snapshots:
 
   '@riotjs/compiler@6.4.2':
     dependencies:
-      '@babel/parser': 7.28.4
+      '@babel/parser': 7.28.5
       '@riotjs/parser': 4.3.1
       '@riotjs/util': 2.1.1
       cssesc: 3.0.0
@@ -3915,14 +3939,14 @@ snapshots:
       recast: 0.20.5
       source-map: 0.7.6
 
-  '@riotjs/dom-bindings@10.0.3':
+  '@riotjs/dom-bindings@10.0.4':
     dependencies:
-      '@riotjs/util': 10.0.0
+      '@riotjs/util': 10.1.2
 
-  '@riotjs/hot-reload@9.0.1(riot@10.0.1)':
+  '@riotjs/hot-reload@9.0.1(riot@10.1.2)':
     dependencies:
       bianco.query: 1.1.4
-      riot: 10.0.1
+      riot: 10.1.2
 
   '@riotjs/observable@4.1.1': {}
 
@@ -3936,7 +3960,7 @@ snapshots:
       curri: 1.0.1
       dom-nodes: 1.1.3
 
-  '@riotjs/util@10.0.0': {}
+  '@riotjs/util@10.1.2': {}
 
   '@riotjs/util@2.1.1': {}
 
@@ -6360,9 +6384,9 @@ snapshots:
     dependencies:
       glob: 7.2.3
 
-  riot@10.0.1:
+  riot@10.1.2:
     dependencies:
-      '@riotjs/dom-bindings': 10.0.3
+      '@riotjs/dom-bindings': 10.0.4
 
   ripemd160@2.0.3:
     dependencies:
@@ -6404,12 +6428,12 @@ snapshots:
     dependencies:
       xmlchars: 2.2.0
 
-  semantic-ui-riot@2.5.3(@riotjs/observable@4.1.1)(riot@10.0.1):
+  semantic-ui-riot@2.5.3(@riotjs/observable@4.1.1)(riot@10.1.2):
     dependencies:
       '@riotjs/observable': 4.1.1
       date-fns: 2.30.0
       q: 1.5.1
-      riot: 10.0.1
+      riot: 10.1.2
 
   semver@5.7.2: {}
 
