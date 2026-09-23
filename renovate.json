@@ -2,22 +2,5 @@
   "extends": [
     "config:base"
   ],
-  "timezone": "Asia/Tokyo",
-  "labels": ["renovate"],
-  "patch": {
-    "automerge": true
-  },
-  "lockFileMaintenance": {
-    "enabled": true
-  },
-  "packageRules": [
-    {
-      "matchUpdateTypes": ["minor", "patch", "pin"],
-      "automerge": true
-    },
-    {
-      "matchDepTypes": ["devDependencies"],
-      "automerge": true
-    }
-  ]
+  "enabled": false
 }
