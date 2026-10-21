@@ -15,8 +15,8 @@ importers:
         specifier: ^1.15.0
         version: 1.15.0(debug@4.4.3(supports-color@6.1.0))
       dotenv:
-        specifier: ^17.2.3
-        version: 17.2.3
+        specifier: ^18.0.0
+        version: 18.0.8
       riot:
         specifier: ^10.0.1
         version: 10.1.6
@@ -1276,9 +1276,10 @@ packages:
   dotenv-expand@5.1.0:
     resolution: {integrity: sha512-YXQl1DSa4/PQyRfgrv6aoNjhasp/p4qs9FjJ4q4cQk+8m4r6k4ZSiEyytKG8f8W9gi8WsQtIObNmKd+tMzNTmA==}
 
-  dotenv@17.2.3:
-    resolution: {integrity: sha512-JVUnt+DUIzu87TABbhPmNfVdBDt18BLOWjMUFJMSi/Qqg7NTYtabbvSNJGOJ7afbRuv9D/lngizHtP7QyLQ+9w==}
+  dotenv@18.0.8:
+    resolution: {integrity: sha512-2KDeoFoK/zRtcnbunCDlLG5VWVMcyqeQc6iK65o231nfNAcuGrKoqUQfJFUtBI+QlShk5HKIHxwebBtUl3rEfA==}
     engines: {node: '>=12'}
+    hasBin: true
 
   dotenv@5.0.1:
     resolution: {integrity: sha512-4As8uPrjfwb7VXC+WnLCbXK7y+Ueb2B3zgNCePYfhxS1PYeaO1YTeplffTEcbfLhvFNGLAz90VvJs9yomG7bow==}
@@ -4744,7 +4745,7 @@ snapshots:
 
   dotenv-expand@5.1.0: {}
 
-  dotenv@17.2.3: {}
+  dotenv@18.0.8: {}
 
   dotenv@5.0.1: {}
 
